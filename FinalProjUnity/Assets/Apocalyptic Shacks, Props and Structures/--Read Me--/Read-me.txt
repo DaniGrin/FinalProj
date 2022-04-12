@@ -1,0 +1,50 @@
+Apocalyptic Shacks, Props and Structures
+Hi and thanks for purchasing, I hope you enjoy the pack as much as I enjoyed making it :)
+Contact me at tenton3d@gmail.com - I'm happy to help or hear about any imrpovements / ideas on the pack.
+
+Please view the quick guide images on how best to use the platforms, ramps, and platform specific walls.
+
+---AssetShowcase scene---
+Here you can find all prefabs in the pack.
+
+---BuildYourOwn Example scenes 1-5---
+These small scenes are to show imaginative ways the prefabs can be put together, and help get your creative juices flowing.
+
+---Platforms / Ramps,Stairs / platform specific walls---
+Please view the quick guide images on how best to use the platforms, ramps, and platform specific walls.
+
+---Doors & Walls---
+Doors work on a hinge joint, run into them to open
+They fit into the 'entrance..' wall prefabs found in "Walls and Entrance". They also fit in the platform specific entrances found in the platform folder. 
+
+---Build your own Examples folder---
+Here are some pre-made shacks created from the individual prefab peices. Check these out to get inspired to make your own. Or simply place down to fill up your scene.
+
+---Unique Shack And Structures folder---
+Shacks / structures made up of custom geometry not found in the individual pieces.
+
+---"Physics Fun" folder---
+Apart from the doors and the trapdoor platform, these are the other objects with physics enabled and can make for fun little set pieces in your project.
+
+---Materials---
+Most prefabs use the Apocalyptic_D PBR material. This uses one 2048 atlas which greatly reduces draw calls. There are some extra materials which are for particles / neons.
+The master PSD holds all the layers for the different maps.
+
+---Neon signs.---
+These use a simple UV scroll script and emissive material to flash on / off.
+
+---Lights---
+Bulbs are seperate objects and use a different 'bulb' material
+
+---Standard Assets---
+The fire barrel and player prefabs both use scripts from standard assets. Cinematic effects are also stored here.
+
+--LODS---
+Some shacks / props have LOD groups added. You may wish to adjust the range at which the levels switch depending on your level design / fog level.
+
+-Tip- You need to use light probes to remove strange light popping between LODS. This issue is discussed here https://forum.unity3d.com/threads/lod-group-baked-lighting-how-to-use.349103/#post-2264273
+
+
+Thanks again - 
+
+Ten Ton 3D

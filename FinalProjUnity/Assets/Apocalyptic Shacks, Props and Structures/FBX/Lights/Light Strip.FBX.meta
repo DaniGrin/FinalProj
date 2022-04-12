@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 874cca60369cef34f8f97aa8d932406c
+timeCreated: 1475869468
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bulbs001
+    100002: //RootNode
+    100004: Light Strip
+    100006: Light Strip 1
+    100008: Support1
+    100010: Support1 1
+    100012: bulbs_LOD0
+    100014: bulbs_LOD1
+    100016: Light Strip_LOD0
+    100018: Light Strip_LOD1
+    100020: Support1_LOD0
+    100022: Support1_LOD1
+    100024: Support2_LOD0
+    100026: Support2_LOD1
+    400000: bulbs001
+    400002: //RootNode
+    400004: Light Strip
+    400006: Light Strip 1
+    400008: Support1
+    400010: Support1 1
+    400012: bulbs_LOD0
+    400014: bulbs_LOD1
+    400016: Light Strip_LOD0
+    400018: Light Strip_LOD1
+    400020: Support1_LOD0
+    400022: Support1_LOD1
+    400024: Support2_LOD0
+    400026: Support2_LOD1
+    2300000: bulbs001
+    2300002: Light Strip
+    2300004: //RootNode
+    2300006: Light Strip 1
+    2300008: Support1
+    2300010: Support1 1
+    2300012: bulbs_LOD0
+    2300014: bulbs_LOD1
+    2300016: Light Strip_LOD0
+    2300018: Light Strip_LOD1
+    2300020: Support1_LOD0
+    2300022: Support1_LOD1
+    2300024: Support2_LOD0
+    2300026: Support2_LOD1
+    3300000: bulbs001
+    3300002: Light Strip
+    3300004: //RootNode
+    3300006: Light Strip 1
+    3300008: Support1
+    3300010: Support1 1
+    3300012: bulbs_LOD0
+    3300014: bulbs_LOD1
+    3300016: Light Strip_LOD0
+    3300018: Light Strip_LOD1
+    3300020: Support1_LOD0
+    3300022: Support1_LOD1
+    3300024: Support2_LOD0
+    3300026: Support2_LOD1
+    4300000: Light Strip
+    4300002: bulbs001
+    4300004: Support1
+    4300006: Support1
+    4300008: Light Strip
+    4300010: Light Strip_LOD1
+    4300012: Support2_LOD1
+    4300014: Support1_LOD1
+    4300016: bulbs_LOD1
+    4300018: Light Strip_LOD0
+    4300020: bulbs_LOD0
+    4300022: Support1_LOD0
+    4300024: Support2_LOD0
+    9500000: //RootNode
+    20500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
