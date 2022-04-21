@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
-    public float speed = 12f;
+    public float speed = 3f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
 
@@ -16,6 +16,18 @@ public class PlayerMovement : MonoBehaviour
 
     Vector3 velocity;
     bool isGrounded;
+
+    //sprinting
+    public bool isSprinting = false;
+    public bool isSprintApply = false;
+    public float sprintingMultiplier;
+
+    //crouching
+    public bool isCrouching = false;
+    public float crouchingMulitplier;
+    public float crouchingHeight = 1.25f;
+    public float standingHeight = 1.7f;
+
     // Update is called once per frame
     void Update()
     {
@@ -37,6 +49,41 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            isSprinting = true;
+        }
+        else
+        {
+            isSprinting = false;
+            isSprintApply = false;
+            speed = 3f;
+        }
+
+        if(isSprinting && !isSprintApply)
+        {
+            speed *= sprintingMultiplier;
+            isSprintApply = true;
+        }
+
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            isCrouching = true;
+        }
+        else
+        {
+            isCrouching = false;
+        }
+
+        if (isCrouching)
+        {
+            controller.height = crouchingHeight;
+            speed *= crouchingMulitplier;
+        }
+        else
+        {
+            controller.height = standingHeight;
+        }
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }
