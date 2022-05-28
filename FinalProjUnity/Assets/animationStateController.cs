@@ -18,13 +18,15 @@ public class animationStateController : MonoBehaviour
     {
         bool isWalking = animator.GetBool(isWalkingHash);
         bool forwardPressed = Input.GetKey("w");
-        if(isWalking && forwardPressed)
+        if( forwardPressed)
         {
             animator.SetBool(isWalkingHash,true);
+            animator.Play("Walking");
         }
-        if (isWalking && !forwardPressed)
+        if (!forwardPressed)
         { 
             animator.SetBool(isWalkingHash,false);
+            //animator.Play("Idle");
         }
     }
 }
