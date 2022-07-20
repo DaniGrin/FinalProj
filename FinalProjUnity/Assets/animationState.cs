@@ -9,6 +9,7 @@ public class animationState : MonoBehaviour
     int isRunningHash;
     int isJumpingHash;
     int isIdleCrouchingHash;
+    int isHookingHash;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class animationState : MonoBehaviour
         isRunningHash = Animator.StringToHash("isRunning");
         isJumpingHash = Animator.StringToHash("isJumping");
         isIdleCrouchingHash = Animator.StringToHash("isIdleCrouching");
+        isHookingHash = Animator.StringToHash("isHookPunch");
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class animationState : MonoBehaviour
         bool RunPressed = Input.GetKey("left shift");
         bool jump = Input.GetKey("space");
         bool idleCrouching = Input.GetKey("left ctrl");
+        bool punch = Input.GetKey(KeyCode.Mouse0);
 
         if (!isWalking && forwardPressed)
         {
@@ -39,7 +42,16 @@ public class animationState : MonoBehaviour
             //set the isWalking boolean to true
             animator.SetBool(isWalkingHash, false);
         }
-
+        if (!punch)
+        {
+            //set the isWalking boolean to true
+            animator.SetBool(isHookingHash, false);
+        }
+        if (punch)
+        {
+            //set the isWalking boolean to true
+            animator.SetBool(isHookingHash, true);
+        }
         //if player is walking and not running and presses left shift
         if (!isrunning && (forwardPressed && RunPressed))
         {
