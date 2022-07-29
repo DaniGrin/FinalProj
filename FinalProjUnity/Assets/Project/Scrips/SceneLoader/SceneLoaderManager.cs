@@ -10,8 +10,19 @@ namespace Project.Scrips.SceneLoader
         private static SceneLoaderManager _instance;
         private bool _isLoading;
 
-        public static ISceneLoaderManager Instance => _instance ??= new SceneLoaderManager();
-        
+        public static ISceneLoaderManager Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new SceneLoaderManager();
+                }
+
+                return _instance;
+            }
+        }
+
         public void SwitchScene(SceneType scene)
         {
             CoroutineManager.Instance.GetCoroutine(() => SwitchSceneAsync(scene)).Start();
