@@ -34,7 +34,7 @@ namespace Project.Scrips.Hp
 
         public void Decrease(int value)
         {
-            int newValue = Value + value;
+            int newValue = Value - value;
 
             Value = newValue < 0 ? 0 : newValue;
         }
