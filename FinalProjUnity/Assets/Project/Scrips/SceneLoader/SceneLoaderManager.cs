@@ -7,10 +7,10 @@ namespace Project.Scrips.SceneLoader
 {
     public class SceneLoaderManager : ISceneLoaderManager
     {
-        private static SceneLoaderManager _sceneLoaderManager;
+        private static SceneLoaderManager _instance;
         private bool _isLoading;
 
-        public static ISceneLoaderManager Instance => _sceneLoaderManager ??= new SceneLoaderManager();
+        public static ISceneLoaderManager Instance => _instance ??= new SceneLoaderManager();
         
         public void SwitchScene(SceneType scene)
         {
