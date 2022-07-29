@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 namespace Project.Scrips.Coroutine
@@ -24,9 +23,9 @@ namespace Project.Scrips.Coroutine
             }
         }
 
-        public ICoroutine GetCoroutine(Func<IEnumerator> method)
+        public void StartAsyncMethod(IEnumerator method)
         {
-            return new Coroutine(this, method);
+            _coroutineManager.StartCoroutine(method);
         }
     }
 }
