@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Project/Scenes/Entry.unity
+    path: Assets/Project/Scenes/EntryScene.unity
     guid: 3a566bfea6151d94ba907d322e35ddee
   - enabled: 1
     path: Assets/Project/Scenes/Hospital.unity
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/SCENE_Apocalyptic_World_Assets.unity
     guid: 7087dad24ce40fc4ebf066de6d8a2bc5
+  - enabled: 1
+    path: Assets/Project/Scenes/UIMenu.unity
+    guid: 8d4fc278b06c31f468a97b6b25638458
   m_configObjects: {}

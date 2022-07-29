@@ -65,7 +65,7 @@ namespace Project.Scrips.SceneLoader
                     name = "Loading";
                     break;
                 case SceneType.Menu:
-                    name = "Menu";
+                    name = "UIMenu";
                     break;
                 case SceneType.Hospital:
                     name = "Hospital";
