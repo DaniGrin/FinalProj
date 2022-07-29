@@ -25,7 +25,9 @@ namespace Project.Scrips.SceneLoader
 
         public void SwitchScene(SceneType scene)
         {
-            CoroutineManager.Instance.GetCoroutine(() => SwitchSceneAsync(scene)).Start();
+            Func<IEnumerator> func = () => SwitchSceneAsync(scene);
+            ICoroutine coroutine = CoroutineManager.Instance.GetCoroutine(func);
+            coroutine.Start();
         }
 
         private IEnumerator SwitchSceneAsync(SceneType scene)
