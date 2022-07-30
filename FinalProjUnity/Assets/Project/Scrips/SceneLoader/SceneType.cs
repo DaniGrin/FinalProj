@@ -2,6 +2,7 @@ namespace Project.Scrips.SceneLoader
 {
     public enum SceneType
     {
+        None,
         Entry,
         Loading,
         Menu,
