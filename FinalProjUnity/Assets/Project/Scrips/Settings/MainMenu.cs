@@ -1,15 +1,19 @@
 using Project.Scrips.SceneLoader;
-using System.Collections;
-using System.Collections.Generic;
+using Project.Scrips.Teleport;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     public void LoadGameButton()
     {
-        SceneLoaderManager.Instance.SwitchScene(SceneType.Hospital);
+        if (PlayerConfig.Instance.ContainsCurrentPlayerScene)
+        {
+            SceneLoaderManager.Instance.SwitchScene(PlayerConfig.Instance.CurrentPlayerScene);
+        }
+        else
+        {
+            StartGame();
+        }
     }
 
     public void ExitButton()
