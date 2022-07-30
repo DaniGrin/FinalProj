@@ -6,16 +6,16 @@ namespace Project.Scrips.Teleport
 {
     public class Teleport : MonoBehaviour
     {
-        [SerializeField] private SceneType _scene;
-        [SerializeField] private Vector3 _playerPosition;
-        private bool _isPlayerOnArea;
+        [SerializeField] private SceneType _sceneToMove;
+        [SerializeField] private Vector3 _playerPositionInNewScene;
+        private bool _isPlayerInTeleportArea;
 
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag(ObjectsTag.Player))
             {
                 MessageDialogManager.Instance.ShowEButton();
-                _isPlayerOnArea = true;
+                _isPlayerInTeleportArea = true;
             }
         }
 
@@ -24,17 +24,17 @@ namespace Project.Scrips.Teleport
             if (other.gameObject.CompareTag(ObjectsTag.Player))
             {
                 MessageDialogManager.Instance.HideEButton();
-                _isPlayerOnArea = false;
+                _isPlayerInTeleportArea = false;
             }
         }
         
         private void Update()
         {
-            if (_isPlayerOnArea && Input.GetKey(KeyCode.E))
+            if (_isPlayerInTeleportArea && Input.GetKey(KeyCode.E))
             {
-                PlayerConfig.Instance.StarterPosition = _playerPosition;
-                PlayerConfig.Instance.CurrentPlayerScene = _scene;
-                SceneLoaderManager.Instance.SwitchScene(_scene);
+                PlayerConfig.Instance.StarterPosition = _playerPositionInNewScene;
+                PlayerConfig.Instance.CurrentPlayerScene = _sceneToMove;
+                SceneLoaderManager.Instance.SwitchScene(_sceneToMove);
             }
         }
     }
