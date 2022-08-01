@@ -41,7 +41,7 @@ namespace Project.Scrips.MessageDialog
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space) && _ui.activeInHierarchy)
+            if (Input.GetKeyDown(KeyCode.F) && _ui.activeInHierarchy)
             {
                 NextMessage();
             }
