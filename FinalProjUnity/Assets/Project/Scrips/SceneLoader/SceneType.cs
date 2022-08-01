@@ -8,6 +8,7 @@ namespace Project.Scrips.SceneLoader
         Menu,
         Hospital,
         Police,
-        Outside
+        Outside,
+        CutScene1
     }
 }
