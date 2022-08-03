@@ -10,16 +10,16 @@ public class ZombieController : MonoBehaviour
     private Vector3 _velocity;
     private float _zombieSpeed;
 
-    public Transform GroundCheck;
-    public float GroundDistance = 0.4f;
-    public LayerMask GroundMask;
-    
-    public NavMeshAgent Agent = null;
+    [SerializeField] private Transform GroundCheck;
+    [SerializeField] private float GroundDistance = 0.4f;
+    [SerializeField] private LayerMask GroundMask;
+
+    [SerializeField] private NavMeshAgent Agent = null;
     [SerializeField] private Transform target;
 
     void Start()
     {
-        //GetReference();
+        
         _zombieSpeed = Agent.speed;
     }
 
@@ -65,8 +65,5 @@ public class ZombieController : MonoBehaviour
         //Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
         //transform.rotation = rotation;
     }
-    private void GetReference()
-    {
-        Agent = GetComponent<NavMeshAgent>();
-    }
+    
 }

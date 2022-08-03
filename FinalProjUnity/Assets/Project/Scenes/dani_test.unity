@@ -193,6 +193,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6112147609700129724, guid: c2bd64da459b97d4d92581e2df985cfc, type: 3}
+      propertyPath: Agent
+      value: 
+      objectReference: {fileID: 1783977671}
+    - target: {fileID: 6112147609700129724, guid: c2bd64da459b97d4d92581e2df985cfc, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 869965038}
@@ -204,6 +208,10 @@ PrefabInstance:
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 1133632096}
+    - target: {fileID: 6112147609700129724, guid: c2bd64da459b97d4d92581e2df985cfc, type: 3}
+      propertyPath: GroundMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 6112147609700129724, guid: c2bd64da459b97d4d92581e2df985cfc, type: 3}
       propertyPath: groundMask.m_Bits
       value: 128
@@ -399,6 +407,11 @@ GameObject:
 --- !u!4 &1783977670 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6112147610322484360, guid: c2bd64da459b97d4d92581e2df985cfc, type: 3}
+  m_PrefabInstance: {fileID: 616742380}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &1783977671 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 6112147609700129726, guid: c2bd64da459b97d4d92581e2df985cfc, type: 3}
   m_PrefabInstance: {fileID: 616742380}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &1783977676
