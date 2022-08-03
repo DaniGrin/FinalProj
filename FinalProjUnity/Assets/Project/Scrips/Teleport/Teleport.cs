@@ -32,6 +32,8 @@ namespace Project.Scrips.Teleport
         {
             if (_isPlayerInTeleportArea && Input.GetKey(KeyCode.E))
             {
+                MessageDialogManager.Instance.HideEButton();
+                _isPlayerInTeleportArea = false;
                 PlayerConfig.Instance.StarterPosition = _playerPositionInNewScene;
                 PlayerConfig.Instance.CurrentPlayerScene = _sceneToMove;
                 SceneLoaderManager.Instance.SwitchScene(_sceneToMove);

@@ -41,6 +41,8 @@ namespace Project.Scrips.Teleport
                 PlayerPrefs.SetFloat(_savePositionKey+"x", value.x);
                 PlayerPrefs.SetFloat(_savePositionKey+"y", value.y);
                 PlayerPrefs.SetFloat(_savePositionKey+"z", value.z);
+
+                PlayerPrefs.Save();
             }
         }
 
@@ -55,6 +57,7 @@ namespace Project.Scrips.Teleport
             set
             {
                 PlayerPrefs.SetInt(_saveSceneKey, (int)value);
+                PlayerPrefs.Save();
             }
         }
     }

@@ -24,6 +24,6 @@ public class MainMenu : MonoBehaviour
     public void StartGame()
     {
         PlayerPrefs.DeleteAll();
-        SceneLoaderManager.Instance.SwitchScene(SceneType.Hospital);
+        SceneLoaderManager.Instance.SwitchScene(SceneType.CutScene1);
     }
 }
