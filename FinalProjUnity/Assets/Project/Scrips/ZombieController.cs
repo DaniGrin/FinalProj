@@ -6,28 +6,31 @@ using UnityEngine.AI;
 
 public class ZombieController : MonoBehaviour
 {
-    bool isGrounded;
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
-    Vector3 velocity;
-    public NavMeshAgent agent = null;
+    private bool _isGrounded;
+    public Transform GroundCheck;
+    public float GroundDistance = 0.4f;
+    public LayerMask GroundMask;
+    private Vector3 _velocity;
+    private float _zombieSpeed;
+    public NavMeshAgent Agent = null;
     [SerializeField] private Transform target;
 
     void Start()
     {
         //GetReference();
+        _zombieSpeed = Agent.speed;
     }
 
     void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        _isGrounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
 
-        if (isGrounded && velocity.y < 0)
+        if (_isGrounded && _velocity.y < 0)
         {
-            velocity.y = -2f;
+            _velocity.y = -2f;
         }
-        if (transform.position.x - target.position.x <= 12 && transform.position.x - target.position.x > 0 || target.position.x - transform.position.x <= 12 && target.position.x - transform.position.x > 0)
+        bool isZombieOnRange = transform.position.x - target.position.x <= 12 && transform.position.x - target.position.x > 0 || target.position.x - transform.position.x <= 12 && target.position.x - transform.position.x > 0;
+        if (isZombieOnRange)
         {
             MoveToTarget();
         }
@@ -40,14 +43,14 @@ public class ZombieController : MonoBehaviour
 
     private void Stop()
     {
-        agent.speed = 0;
+        Agent.speed = 0;
     }
 
     private void MoveToTarget()
     {
-        agent.SetDestination(target.position);
+        Agent.SetDestination(target.position);
         RotateToTarget();
-        agent.speed = 1;
+        Agent.speed = _zombieSpeed;
 
     }
     private void RotateToTarget()
@@ -62,6 +65,6 @@ public class ZombieController : MonoBehaviour
     }
     private void GetReference()
     {
-        agent = GetComponent<NavMeshAgent>();
+        Agent = GetComponent<NavMeshAgent>();
     }
 }
