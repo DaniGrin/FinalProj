@@ -197,6 +197,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 869965038}
     - target: {fileID: 6112147609700129724, guid: c2bd64da459b97d4d92581e2df985cfc, type: 3}
+      propertyPath: GroundCheck
+      value: 
+      objectReference: {fileID: 1133632096}
+    - target: {fileID: 6112147609700129724, guid: c2bd64da459b97d4d92581e2df985cfc, type: 3}
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 1133632096}
