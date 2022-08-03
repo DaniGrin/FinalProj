@@ -1,5 +1,3 @@
-using System.Collections;
-using Project.Scrips.Coroutine;
 using UnityEngine;
 
 namespace Project.Scrips.Teleport
@@ -10,21 +8,8 @@ namespace Project.Scrips.Teleport
         {
             if (PlayerConfig.Instance.ContainsStarterPosition)
             {
-                CoroutineManager.Instance.StartAsyncMethod(UpdatePosition());
+                transform.position = PlayerConfig.Instance.StarterPosition;
             }
-        }
-
-        private IEnumerator UpdatePosition()
-        {
-            int leftFrameToUpdate = 10;
-
-            while (leftFrameToUpdate > 0)
-            {
-                leftFrameToUpdate--;
-                yield return null;
-            }
-
-            transform.position = PlayerConfig.Instance.StarterPosition;
         }
     }
 }
