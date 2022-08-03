@@ -28,7 +28,11 @@ public class ZombieController : MonoBehaviour
         {
             _velocity.y = -2f;
         }
-        bool isZombieOnRange = transform.position.x - _target.position.x <= 12 && transform.position.x - _target.position.x > 0 || _target.position.x - transform.position.x <= 12 && _target.position.x - transform.position.x > 0;
+
+        float distanceX = Mathf.Abs(transform.position.x - _target.position.x);
+        float distanceZ = Mathf.Abs(transform.position.z - _target.position.z);
+
+        bool isZombieOnRange = distanceX <= 12 && distanceX > 0 && distanceZ <= 12 && distanceZ >0;
         if (isZombieOnRange)
         {
             MoveToTarget();
