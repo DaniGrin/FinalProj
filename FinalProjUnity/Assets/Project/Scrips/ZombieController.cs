@@ -7,11 +7,13 @@ using UnityEngine.AI;
 public class ZombieController : MonoBehaviour
 {
     private bool _isGrounded;
+    private Vector3 _velocity;
+    private float _zombieSpeed;
+
     public Transform GroundCheck;
     public float GroundDistance = 0.4f;
     public LayerMask GroundMask;
-    private Vector3 _velocity;
-    private float _zombieSpeed;
+    
     public NavMeshAgent Agent = null;
     [SerializeField] private Transform target;
 
