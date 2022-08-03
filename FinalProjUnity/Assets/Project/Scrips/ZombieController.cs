@@ -1,6 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Project.Scrips;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -13,14 +11,13 @@ public class ZombieController : MonoBehaviour
     [SerializeField] private Transform GroundCheck;
     [SerializeField] private float GroundDistance = 0.4f;
     [SerializeField] private LayerMask GroundMask;
-
     [SerializeField] private NavMeshAgent Agent = null;
-    [SerializeField] private Transform target;
+    private Transform _target;
 
     void Start()
     {
-        
         _zombieSpeed = Agent.speed;
+        _target = GameObject.FindGameObjectWithTag(ObjectsTag.Player).transform;
     }
 
     void Update()
@@ -31,7 +28,7 @@ public class ZombieController : MonoBehaviour
         {
             _velocity.y = -2f;
         }
-        bool isZombieOnRange = transform.position.x - target.position.x <= 12 && transform.position.x - target.position.x > 0 || target.position.x - transform.position.x <= 12 && target.position.x - transform.position.x > 0;
+        bool isZombieOnRange = transform.position.x - _target.position.x <= 12 && transform.position.x - _target.position.x > 0 || _target.position.x - transform.position.x <= 12 && _target.position.x - transform.position.x > 0;
         if (isZombieOnRange)
         {
             MoveToTarget();
@@ -50,14 +47,14 @@ public class ZombieController : MonoBehaviour
 
     private void MoveToTarget()
     {
-        Agent.SetDestination(target.position);
+        Agent.SetDestination(_target.position);
         RotateToTarget();
         Agent.speed = _zombieSpeed;
 
     }
     private void RotateToTarget()
     {
-        var targetPosition = target.position;
+        var targetPosition = _target.position;
         targetPosition.y = transform.position.y;
         transform.LookAt(targetPosition);
         
