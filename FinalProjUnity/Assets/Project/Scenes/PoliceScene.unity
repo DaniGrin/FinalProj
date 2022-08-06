@@ -12624,8 +12624,13 @@ MonoBehaviour:
   _messages:
   - 'I''m glad to see you''re alive i was sure all our team is dead by now '
   - It was terrible.. so many people died
+  - Me and a few other survivors decided to make a shelter for people who survived
+    what happened
+  - And by the way I saw your wife there so don't waste your time here and go meet
+    her
+  - What are you waiting for, take the pass and go to her
   _repeatMessages:
-  - lets go
+  - What are you waiting for,  she is waiting for you
 --- !u!65 &322561198
 BoxCollider:
   m_ObjectHideFlags: 0
