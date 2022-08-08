@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/UIMenu.unity
     guid: 8d4fc278b06c31f468a97b6b25638458
   - enabled: 1
-    path: Assets/Project/Scenes/CutScene.unity
+    path: Assets/Project/Scenes/CutScene01.unity
     guid: d7700d108c9efe84595708b6c1a89fa7
+  - enabled: 1
+    path: Assets/Project/Scenes/CutScene02.unity
+    guid: 5f762b50e0f83d24cb5d0ef8854ed633
   m_configObjects: {}
