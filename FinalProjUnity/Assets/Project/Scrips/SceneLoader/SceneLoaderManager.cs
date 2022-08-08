@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Project.Scrips.Coroutine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Project.Scrips.SceneLoader
@@ -41,9 +42,18 @@ namespace Project.Scrips.SceneLoader
                     yield return null;
                 }
 
-                var toLoadScene = SceneManager.LoadSceneAsync(GetNameScene(scene));
+                yield return new WaitForSeconds(2);
+
+                var toLoadScene = SceneManager.LoadSceneAsync(GetNameScene(scene), LoadSceneMode.Additive);
 
                 while (!toLoadScene.isDone)
+                {
+                    yield return null;
+                }
+
+                var unloadLoadingScene = SceneManager.UnloadSceneAsync(GetNameScene(SceneType.Loading));
+                
+                while (!unloadLoadingScene.isDone)
                 {
                     yield return null;
                 }
@@ -77,7 +87,10 @@ namespace Project.Scrips.SceneLoader
                     name = "SCENE_Apocalyptic_World_Assets";
                     break;
                 case SceneType.CutScene1:
-                    name = "CutScene";
+                    name = "CutScene01";
+                    break;
+                case SceneType.CutScene2:
+                    name = "CutScene02";
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(sceneType), sceneType, null);
