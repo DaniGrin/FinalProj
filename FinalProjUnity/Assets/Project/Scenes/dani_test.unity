@@ -190,10 +190,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1463040855, guid: 674129612be132541b0017426fcb57e9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.056
-      objectReference: {fileID: 0}
     - target: {fileID: 3010610484469639457, guid: 674129612be132541b0017426fcb57e9, type: 3}
       propertyPath: m_Name
       value: First Person Player
