@@ -15,6 +15,16 @@ namespace Project.Scrips.Weapon
         private Weapon _inAreaWeapon;
         private WeaponName _currentWeapon;
 
+        public bool ContainsWeapon()
+        {
+            return _isContainsWeapon;
+        }
+
+        public Weapon CurrentWeapon()
+        {
+            return _playerWeapons.First(w => w.GetWeaponName() == _currentWeapon);
+        }
+
         private void SetWeapon(Weapon weapon)
         {
             var weaponName = weapon.GetWeaponName();
