@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 2825376162039990053}
   m_Layer: 0
   m_Name: Fire Axe
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,7 +175,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 2.5, z: 0.88}
+  m_Size: {x: 1.2, y: 2.5, z: 1}
   m_Center: {x: 0.000000028212295, y: 0.33290517, z: -0.043073494}
 --- !u!1 &1616983662186552
 GameObject:
