@@ -1,15 +1,19 @@
+using Project.Scrips.Weapon;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class animationState : MonoBehaviour
 {
+    [SerializeField] private WeaponHolder _playerWeaponHolder;
     Animator animator;
     int isWalkingHash;
     int isRunningHash;
     int isJumpingHash;
     int isIdleCrouchingHash;
     int isHookingHash;
+    int isHoldWeaponHash;
+
 
     void Start()
     {
@@ -19,6 +23,7 @@ public class animationState : MonoBehaviour
         isJumpingHash = Animator.StringToHash("isJumping");
         isIdleCrouchingHash = Animator.StringToHash("isIdleCrouching");
         isHookingHash = Animator.StringToHash("isHookPunch");
+        isHoldWeaponHash = Animator.StringToHash("isHoldWeapon");
     }
 
     // Update is called once per frame
@@ -31,7 +36,17 @@ public class animationState : MonoBehaviour
         bool jump = Input.GetKey("space");
         bool idleCrouching = Input.GetKey("left ctrl");
         bool punch = Input.GetKey(KeyCode.Mouse0);
+        bool holdWeapon = _playerWeaponHolder.isHoldWeapon;
 
+        if (holdWeapon && punch)
+        {
+            animator.SetBool(isHookingHash, false);
+            animator.SetBool(isHoldWeaponHash, true);
+        }
+        if(!holdWeapon || !punch)
+        {
+            animator.SetBool(isHoldWeaponHash, false);
+        }
         if (!isWalking && forwardPressed)
         {
             //set the isWalking boolean to true
@@ -81,5 +96,6 @@ public class animationState : MonoBehaviour
         {
             animator.SetBool(isIdleCrouchingHash, false);
         }
+        
     }
 }
