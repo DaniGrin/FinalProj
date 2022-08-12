@@ -18,7 +18,7 @@ namespace Project.Scrips.Attack
 
         private void Update()
         {
-            if ((!_isAttackAuto && Input.GetKeyDown(KeyCode.T) || _isAttackAuto) && Time.time - _lastAttack >= _delayBetweenAttacksSeconds)
+            if ((!_isAttackAuto && Input.GetKeyDown(KeyCode.Mouse0) || _isAttackAuto) && Time.time - _lastAttack >= _delayBetweenAttacksSeconds)
             {
                 _lastAttack = Time.time;
 
