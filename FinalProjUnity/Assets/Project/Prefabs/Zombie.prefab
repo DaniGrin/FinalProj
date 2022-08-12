@@ -64,6 +64,9 @@ MonoBehaviour:
   _damageHands: 3
   _isAttackAuto: 1
   _myHp: {fileID: 1043960603837763073}
+  _disallowScriptsOnDie:
+  - {fileID: 7544989100238904041}
+  - {fileID: 6112147609700129724}
 --- !u!65 &3544123622029023470
 BoxCollider:
   m_ObjectHideFlags: 0

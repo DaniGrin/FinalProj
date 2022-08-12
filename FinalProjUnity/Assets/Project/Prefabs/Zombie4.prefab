@@ -134,6 +134,10 @@ MonoBehaviour:
   _damageHands: 3
   _isAttackAuto: 1
   _myHp: {fileID: 2988189264564568270}
+  _disallowScriptsOnDie:
+  - {fileID: 2892727657398074010}
+  - {fileID: 2988189264564568270}
+  - {fileID: 309529095694210202}
 --- !u!195 &2892727657398074009
 NavMeshAgent:
   m_ObjectHideFlags: 0
