@@ -4,11 +4,15 @@ namespace Project.Scrips.Teleport
 {
     public class TeleportPositionUpdater : MonoBehaviour
     {
-        private void Awake()
+        [SerializeField] private Transform _playerTransform;
+        private bool _isPositionSet;
+
+        private void FixedUpdate()
         {
-            if (PlayerConfig.Instance.ContainsStarterPosition)
+            if (!_isPositionSet && PlayerConfig.Instance.ContainsStarterPosition)
             {
-                transform.position = PlayerConfig.Instance.StarterPosition;
+                _playerTransform.position = PlayerConfig.Instance.StarterPosition;
+                _isPositionSet = true;
             }
         }
     }
