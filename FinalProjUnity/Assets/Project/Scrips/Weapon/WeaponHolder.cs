@@ -9,11 +9,12 @@ namespace Project.Scrips.Weapon
     public class WeaponHolder : MonoBehaviour
     {
         [SerializeField] private List<Weapon> _playerWeapons;
-        
         private bool _isContainsWeapon;
         private bool _isPlayerNearWeapon;
         private Weapon _inAreaWeapon;
         private WeaponName _currentWeapon;
+
+        public bool isHoldWeapon = false;
 
         public bool ContainsWeapon()
         {
@@ -54,6 +55,7 @@ namespace Project.Scrips.Weapon
             if (_isPlayerNearWeapon && Input.GetKey(KeyCode.E))
             {
                 SetWeapon(_inAreaWeapon);
+                isHoldWeapon = true;
             }
         }
         

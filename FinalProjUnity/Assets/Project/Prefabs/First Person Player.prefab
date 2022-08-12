@@ -469,6 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59ef22c58ceb4f42be052f0e49d167d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerWeaponHolder: {fileID: 4258453486496025044}
 --- !u!1 &1062331471107123149
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,8 +603,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3010610483925810584}
-  m_LocalRotation: {x: 0.08614514, y: 0.00000065565104, z: -0.000000055879347, w: 0.9962826}
-  m_LocalPosition: {x: -0.060058594, y: 0.7860031, z: -0.07495119}
+  m_LocalRotation: {x: 0.08614515, y: 0.0000006556511, z: -0.00000005587935, w: 0.99628264}
+  m_LocalPosition: {x: -0.060058594, y: 0.7860031, z: -0.07495117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3010610483478690538}
@@ -889,6 +890,7 @@ MonoBehaviour:
   - {fileID: 3856995051897760431}
   - {fileID: 5908583736887252696}
   - {fileID: 4361986434744276997}
+  isHoldWeapon: 0
 --- !u!1001 &3010610483653417913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1095,6 +1097,10 @@ PrefabInstance:
     - target: {fileID: 4187491646696980986, guid: da1203547328fdb41974e0b5334e799a, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5473358847020678666, guid: da1203547328fdb41974e0b5334e799a, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7882548468625781347, guid: da1203547328fdb41974e0b5334e799a, type: 3}
       propertyPath: m_IsActive
