@@ -514,11 +514,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17552b5ab1fc4c098f97209a91c4a20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _delayBetweenAttacksSeconds: 2
+  _delayBetweenAttacksSeconds: 1
   _weaponHolder: {fileID: 4258453486496025044}
   _damageHands: 3
   _isAttackAuto: 0
   _myHp: {fileID: 3981231514314778553}
+  _disallowScriptsOnDie:
+  - {fileID: 3010610484469639460}
+  - {fileID: 3981231514314778553}
+  - {fileID: 4258453486496025044}
 --- !u!65 &8988913602467103163
 BoxCollider:
   m_ObjectHideFlags: 0

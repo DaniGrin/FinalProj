@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Project.Scrips.Hp;
 using Project.Scrips.Weapon;
 using UnityEngine;
@@ -11,6 +12,7 @@ namespace Project.Scrips.Attack
         [SerializeField] private int _damageHands = 3;
         [SerializeField] private bool _isAttackAuto;
         [SerializeField] private HpEntityComponent _myHp;
+        [SerializeField] private List<MonoBehaviour> _disallowScriptsOnDie;
 
         private float _lastAttack;
         private bool _containsEnemy;
@@ -18,7 +20,7 @@ namespace Project.Scrips.Attack
 
         private void Update()
         {
-            if ((!_isAttackAuto && Input.GetKeyDown(KeyCode.T) || _isAttackAuto) && Time.time - _lastAttack >= _delayBetweenAttacksSeconds)
+            if ((!_isAttackAuto && Input.GetKeyDown(KeyCode.Mouse0) || _isAttackAuto) && Time.time - _lastAttack >= _delayBetweenAttacksSeconds)
             {
                 _lastAttack = Time.time;
 
@@ -26,12 +28,10 @@ namespace Project.Scrips.Attack
                 if (_weaponHolder == null || !_weaponHolder.ContainsWeapon())
                 {
                     damage = _damageHands;
-                    // TODO: activate hands attack animation
                 }
                 else
                 {
                     damage = _weaponHolder.CurrentWeapon().GetDamage();
-                    // TODO: activate weapon attack animation
                 }
 
                 if (_containsEnemy)
@@ -55,6 +55,27 @@ namespace Project.Scrips.Attack
             if (other.TryGetComponent(out HpEntityComponent hpEntityComponent) && _myHp != hpEntityComponent)
             {
                 _containsEnemy = false;
+            }
+        }
+
+        private void OnEnable()
+        {
+            _myHp.Updated += OnHpUpdated;
+        }
+
+        private void OnDisable()
+        {
+            _myHp.Updated -= OnHpUpdated;
+        }
+
+        private void OnHpUpdated()
+        {
+            if (_myHp.Value <= 0)
+            {
+                foreach (var monoBehaviour in _disallowScriptsOnDie)
+                {
+                    monoBehaviour.enabled = false;
+                }
             }
         }
     }

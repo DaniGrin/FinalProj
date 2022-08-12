@@ -187,6 +187,9 @@ MonoBehaviour:
   _damageHands: 3
   _isAttackAuto: 1
   _myHp: {fileID: 7649846853218030166}
+  _disallowScriptsOnDie:
+  - {fileID: 8533310794276613209}
+  - {fileID: 5255628636068103898}
 --- !u!1001 &5255628636068103873
 PrefabInstance:
   m_ObjectHideFlags: 0

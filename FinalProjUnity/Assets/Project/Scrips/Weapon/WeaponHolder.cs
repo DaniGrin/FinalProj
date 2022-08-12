@@ -28,9 +28,6 @@ namespace Project.Scrips.Weapon
 
         private void SetWeapon(Weapon weapon)
         {
-            var weaponName = weapon.GetWeaponName();
-            DestroyImmediate(weapon.gameObject);
-            
             if (_isContainsWeapon)
             {
                 var currentWeapon = _playerWeapons.First(w => w.GetWeaponName() == _currentWeapon);
@@ -38,10 +35,19 @@ namespace Project.Scrips.Weapon
 
                 var dropped = Instantiate(currentWeapon.gameObject);
                 dropped.gameObject.SetActive(true);
-                dropped.transform.position = transform.position;
+                dropped.transform.position = transform.position + new Vector3(0,2,0);
                 dropped.AddComponent<Rigidbody>();
+                _isContainsWeapon = false;
+            }
+
+            if (weapon == null)
+            {
+                return;
             }
             
+            var weaponName = weapon.GetWeaponName();
+            DestroyImmediate(weapon.gameObject);
+
             _playerWeapons.First(w => w.GetWeaponName() == weaponName).gameObject.SetActive(true);
             _currentWeapon = weaponName;
             _isContainsWeapon = true;
@@ -52,9 +58,15 @@ namespace Project.Scrips.Weapon
         
         private void Update()
         {
-            if (_isPlayerNearWeapon && Input.GetKey(KeyCode.E))
+            if (_isPlayerNearWeapon && Input.GetKeyDown(KeyCode.E))
             {
                 SetWeapon(_inAreaWeapon);
+                isHoldWeapon = true;
+            }
+
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                SetWeapon(null);
                 isHoldWeapon = true;
             }
         }

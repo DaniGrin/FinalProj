@@ -134,6 +134,10 @@ MonoBehaviour:
   _damageHands: 3
   _isAttackAuto: 1
   _myHp: {fileID: 7706694529853483447}
+  _disallowScriptsOnDie:
+  - {fileID: 8748444163079116419}
+  - {fileID: 7706694529853483447}
+  - {fileID: 3184817815538938652}
 --- !u!114 &7706694529853483447
 MonoBehaviour:
   m_ObjectHideFlags: 0
