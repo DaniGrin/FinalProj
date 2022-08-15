@@ -8,22 +8,7 @@ namespace Project.Scrips.Hp
         [SerializeField] private Text _hpText;
         [SerializeField] private HpEntityComponent _playerHp;
 
-        void Update()
-        {
-            
-            if (int.Parse(_hpText.text) > 55)
-            {
-                _hpText.color = new Color(0, 255, 0, 255);
-            }
-            if(int.Parse(_hpText.text) <= 55 && int.Parse(_hpText.text) > 20)
-            {
-                _hpText.color = new Color(255, 160, 0, 255);
-            }
-            if(int.Parse(_hpText.text) <= 20)
-            {
-                _hpText.color = new Color(255, 0, 0, 255);
-            }
-        }
+        
         private void OnEnable()
         {
             _playerHp.Updated += OnUpdated;
@@ -43,6 +28,18 @@ namespace Project.Scrips.Hp
         private void UpdateHp()
         {
             _hpText.text = _playerHp.Value.ToString();
+            if (int.Parse(_hpText.text) > 55)
+            {
+                _hpText.color = new Color(0, 255, 0, 255);
+            }
+            if (int.Parse(_hpText.text) <= 55 && int.Parse(_hpText.text) > 20)
+            {
+                _hpText.color = new Color(255, 160, 0, 255);
+            }
+            if (int.Parse(_hpText.text) <= 20)
+            {
+                _hpText.color = new Color(255, 0, 0, 255);
+            }
         }
     }
 }
