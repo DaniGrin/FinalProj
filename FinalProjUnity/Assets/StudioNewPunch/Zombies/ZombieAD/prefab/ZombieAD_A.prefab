@@ -319,7 +319,6 @@ GameObject:
   m_Component:
   - component: {fileID: 463952}
   - component: {fileID: 9582056}
-  - component: {fileID: 11475440}
   m_Layer: 0
   m_Name: ZombieAD_A
   m_TagString: Untagged
@@ -362,29 +361,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &11475440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 110376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 878b50f38a51f2047833565d8a892d99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debugMode: 1
-  targetBone: {fileID: 476978}
-  boneAxis: {x: 0, y: 0, z: 1}
-  targetDistance: 18
-  bStiffness: 0.02
-  bMass: 0.3
-  bDamping: 0.2
-  bGravity: 0.75
-  SquashAndStretch: 0
-  sideStretch: 0.15
-  frontStretch: 0.2
 --- !u!1 &111632
 GameObject:
   m_ObjectHideFlags: 0
