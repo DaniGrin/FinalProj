@@ -649,7 +649,7 @@ ModelImporter:
     - name: lowerarm_l
       parentName: upperarm_l
       position: {x: -0.30339926, y: 0.000000019073486, z: -0.00000015258789}
-      rotation: {x: -0.0681914, y: 0.0034252251, z: 0.029342376, w: 0.9972349}
+      rotation: {x: -0.06819139, y: 0.0034252251, z: 0.029342368, w: 0.9972349}
       scale: {x: 1, y: 1, z: 1}
     - name: hand_l
       parentName: lowerarm_l
@@ -674,7 +674,7 @@ ModelImporter:
     - name: middle_01_l
       parentName: hand_l
       position: {x: -0.122442774, y: 0.012936401, z: 0.005711632}
-      rotation: {x: 0.023185486, y: 0.023467084, z: -0.12807834, w: 0.9912152}
+      rotation: {x: 0.023185488, y: 0.023467084, z: -0.12807836, w: 0.9912152}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_02_l
       parentName: middle_01_l
@@ -759,7 +759,7 @@ ModelImporter:
     - name: index_01_r
       parentName: hand_r
       position: {x: 0.12067947, y: -0.01763733, z: 0.021094283}
-      rotation: {x: 0.119902894, y: -0.018558502, z: -0.12434412, w: 0.98479307}
+      rotation: {x: 0.11990291, y: -0.018558502, z: -0.12434413, w: 0.98479307}
       scale: {x: 1, y: 1, z: 1}
     - name: index_02_r
       parentName: index_01_r
@@ -774,7 +774,7 @@ ModelImporter:
     - name: middle_01_r
       parentName: hand_r
       position: {x: 0.122441255, y: -0.012937317, z: -0.0057113264}
-      rotation: {x: 0.017710863, y: 0.011208422, z: -0.12938897, w: 0.99137235}
+      rotation: {x: 0.017710868, y: 0.011208422, z: -0.12938902, w: 0.99137235}
       scale: {x: 1, y: 1, z: 1}
     - name: middle_02_r
       parentName: middle_01_r
@@ -859,7 +859,7 @@ ModelImporter:
     - name: foot_l
       parentName: calf_l
       position: {x: 0.40196696, y: 0, z: 0}
-      rotation: {x: -0.029979631, y: -0.0686932, z: -0.1782108, w: 0.9811338}
+      rotation: {x: -0.028269626, y: -0.065675005, z: -0.1589818, w: 0.98468906}
       scale: {x: 1, y: 1, z: 1}
     - name: ball_l
       parentName: foot_l
