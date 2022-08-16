@@ -9,6 +9,7 @@ public class MissionStarter : MonoBehaviour
 {
     private bool _isPlayerOnArea;
     [SerializeField] private GameObject _zombie;
+    [SerializeField] private GameObject _alert;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -39,6 +40,7 @@ public class MissionStarter : MonoBehaviour
     {
         PlayerPrefs.SetInt(GetFullKey(), 1);
         _zombie.SetActive(true);
+        _alert.SetActive(true);
     }
 
     private string GetFullKey()
