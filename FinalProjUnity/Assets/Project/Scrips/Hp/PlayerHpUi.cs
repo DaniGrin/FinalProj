@@ -7,8 +7,8 @@ namespace Project.Scrips.Hp
     {
         [SerializeField] private Text _hpText;
         [SerializeField] private HpEntityComponent _playerHp;
+        [SerializeField] private GameObject _DeathMenu;
 
-        
         private void OnEnable()
         {
             _playerHp.Updated += OnUpdated;
@@ -28,6 +28,11 @@ namespace Project.Scrips.Hp
         private void UpdateHp()
         {
             _hpText.text = _playerHp.Value.ToString();
+            if(int.Parse(_hpText.text) == 0 && _hpText.color == new Color(255, 0, 0, 255))
+            {
+                _DeathMenu.SetActive(true);
+                Time.timeScale = 0f;
+            }
             if (int.Parse(_hpText.text) > 55)
             {
                 _hpText.color = new Color(0, 255, 0, 255);
