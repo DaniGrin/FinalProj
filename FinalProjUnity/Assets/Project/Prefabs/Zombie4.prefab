@@ -148,11 +148,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1.2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -178,6 +178,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   Agent: {fileID: 2892727657398074009}
+  _zombieHp: {fileID: 2988189264564568270}
 --- !u!114 &2988189264564568270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +259,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 2574f89221ca7ef47bb7779bd5679773, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7b395ca3d773cd440b6ce3dbc59bdbc7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2574f89221ca7ef47bb7779bd5679773, type: 3}
 --- !u!1 &2892727657398107595 stripped

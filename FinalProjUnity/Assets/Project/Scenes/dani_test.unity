@@ -856,26 +856,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5255628636067978745, guid: f575ff62f834bbb4881d963abfb2eeda, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 5255628636068103898, guid: f575ff62f834bbb4881d963abfb2eeda, type: 3}
-      propertyPath: _zombieHp
-      value: 
-      objectReference: {fileID: 1061010907}
-    - target: {fileID: 5255628636068103899, guid: f575ff62f834bbb4881d963abfb2eeda, type: 3}
-      propertyPath: m_Speed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5255628636068103899, guid: f575ff62f834bbb4881d963abfb2eeda, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5255628636075406241, guid: f575ff62f834bbb4881d963abfb2eeda, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 658e5366216bb454d87b51b3ac413466, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f575ff62f834bbb4881d963abfb2eeda, type: 3}
 --- !u!1001 &871973944
@@ -967,17 +947,6 @@ PrefabInstance:
       objectReference: {fileID: 1912555915}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 674129612be132541b0017426fcb57e9, type: 3}
---- !u!114 &1061010907 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7649846853218030166, guid: f575ff62f834bbb4881d963abfb2eeda, type: 3}
-  m_PrefabInstance: {fileID: 736557992}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a3d5dcbcbc145deb91e4b46efa532c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1131311322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -988,10 +957,6 @@ PrefabInstance:
     - target: {fileID: 2892727657342872075, guid: 79759dea228ffe74d920eeb06cd2bba9, type: 3}
       propertyPath: m_Name
       value: Zombie4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2892727657342872075, guid: 79759dea228ffe74d920eeb06cd2bba9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2892727657342872180, guid: 79759dea228ffe74d920eeb06cd2bba9, type: 3}
       propertyPath: m_RootOrder
@@ -1286,10 +1251,6 @@ PrefabInstance:
     - target: {fileID: 8748444162627255268, guid: 0385467eb31216040be97c6a2c5057c3, type: 3}
       propertyPath: m_Name
       value: Zombie3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8748444162627255268, guid: 0385467eb31216040be97c6a2c5057c3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8748444162627255269, guid: 0385467eb31216040be97c6a2c5057c3, type: 3}
       propertyPath: m_RootOrder
