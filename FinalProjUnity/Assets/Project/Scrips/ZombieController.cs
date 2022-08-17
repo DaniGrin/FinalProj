@@ -1,4 +1,5 @@
 using Project.Scrips;
+using Project.Scrips.Hp;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,16 +13,27 @@ public class ZombieController : MonoBehaviour
     [SerializeField] private float GroundDistance = 0.4f;
     [SerializeField] private LayerMask GroundMask;
     [SerializeField] private NavMeshAgent Agent = null;
+    [SerializeField] private HpEntityComponent _zombieHp;
     private Transform _target;
+
+    private Animator animator;
+    private int isWalkHash;
+    private int isAttackHash;
+    private int isDeathHash;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
+        isWalkHash = Animator.StringToHash("isWalking");
+        isAttackHash = Animator.StringToHash("isAttacking");
+        isDeathHash = Animator.StringToHash("isDeath");
         _zombieSpeed = Agent.speed;
         _target = GameObject.FindGameObjectWithTag(ObjectsTag.Player).transform;
     }
 
     void Update()
     {
+        
         _isGrounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
 
         if (_isGrounded && _velocity.y < 0)
@@ -41,16 +53,30 @@ public class ZombieController : MonoBehaviour
         {
             Stop();
         }
-            
+        if (isZombieOnRange && distanceX <= 1.5 && distanceZ <= 1.5)
+        {
+            animator.SetBool(isWalkHash, false);
+            animator.SetBool(isAttackHash, true);
+        }
+        else
+        {
+            animator.SetBool(isAttackHash, false);
+        }
+        if (_zombieHp.Value == 0)
+        {
+            animator.SetBool(isDeathHash, true);
+        }
     }
 
     private void Stop()
     {
+        animator.SetBool(isWalkHash, false);
         Agent.speed = 0;
     }
 
     private void MoveToTarget()
     {
+        animator.SetBool(isWalkHash, true);
         Agent.SetDestination(_target.position);
         RotateToTarget();
         Agent.speed = _zombieSpeed;
