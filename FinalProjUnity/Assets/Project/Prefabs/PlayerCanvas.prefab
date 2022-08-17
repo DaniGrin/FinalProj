@@ -270,3 +270,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hpText: {fileID: 6768550167238138746}
   _playerHp: {fileID: 0}
+  _DeathMenu: {fileID: 0}
