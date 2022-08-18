@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2621545735977390122, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2621545735977390122, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -218,6 +218,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGameMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 2621545735977390133, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 1586235623}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
 --- !u!1 &181077296
@@ -883,7 +887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5100538635300669358, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5100538635300669358, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1694,6 +1698,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 674129612be132541b0017426fcb57e9, type: 3}
+--- !u!1 &1586235623 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3010610483925810584, guid: 674129612be132541b0017426fcb57e9, type: 3}
+  m_PrefabInstance: {fileID: 1586235622}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1598568016
 PrefabInstance:
   m_ObjectHideFlags: 0

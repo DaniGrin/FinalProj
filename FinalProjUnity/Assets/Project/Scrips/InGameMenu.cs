@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class InGameMenu : MonoBehaviour
 {
-    [SerializeField] GameObject _inGameMenu;
-    [SerializeField] GameObject _camera;
+    [SerializeField] private GameObject _inGameMenu;
+    [SerializeField] private GameObject _camera;
 
     public static bool GameIsPaused = false;
 
