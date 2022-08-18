@@ -8,7 +8,7 @@ namespace Project.Scrips.Hp
         [SerializeField] private Text _hpText;
         [SerializeField] private HpEntityComponent _playerHp;
         [SerializeField] private GameObject _DeathMenu;
-
+        [SerializeField] private GameObject _camera;
         private void OnEnable()
         {
             _playerHp.Updated += OnUpdated;
@@ -32,6 +32,7 @@ namespace Project.Scrips.Hp
             {
                 _DeathMenu.SetActive(true);
                 Time.timeScale = 0f;
+                _camera.GetComponent<MouseLook>().enabled = false;
             }
             if (int.Parse(_hpText.text) > 55)
             {

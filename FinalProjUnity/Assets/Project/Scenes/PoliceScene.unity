@@ -3194,7 +3194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2621545735977390122, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2621545735977390122, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3272,6 +3272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InGameMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 2621545735977390133, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: _camera
+      value: 
+      objectReference: {fileID: 448324638}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
 --- !u!1 &78139368 stripped
@@ -12715,8 +12719,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3878e6001641a5b26f0c7a9b7f4423, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: bob
-  _title: bob
+  _id: Dan
+  _title: Dan
   _sprite: {fileID: 21300000, guid: 7227a51a2cae3af4e8c3e4fd116b0b0e, type: 3}
   _messages:
   - 'I''m glad to see you''re alive i was sure all our team is dead by now '
@@ -14667,7 +14671,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1451630633815714, guid: 5b900f9858a991b4b87d5d67bc4a90ee, type: 3}
       propertyPath: m_Name
-      value: Bob
+      value: Dan
       objectReference: {fileID: 0}
     - target: {fileID: 1451630633815714, guid: 5b900f9858a991b4b87d5d67bc4a90ee, type: 3}
       propertyPath: m_IsActive
@@ -18123,6 +18127,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a3d5dcbcbc145deb91e4b46efa532c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &448324638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3010610483925810584, guid: 674129612be132541b0017426fcb57e9, type: 3}
+  m_PrefabInstance: {fileID: 448324636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &449669954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33594,6 +33603,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 406603452818784229, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 454186250057647891, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: _eButton
       value: 
@@ -33601,6 +33614,14 @@ PrefabInstance:
     - target: {fileID: 1618405704049088221, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_Name
       value: MessageCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1675170379113489172, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4011622837000603960, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5100538635300669358, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_Pivot.x
@@ -33612,7 +33633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5100538635300669358, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5100538635300669358, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -33685,6 +33706,10 @@ PrefabInstance:
     - target: {fileID: 5100538635300669358, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464507081100237477, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6800814957415208098, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_Text
