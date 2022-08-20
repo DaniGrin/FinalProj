@@ -861,21 +861,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 406603452818784229, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 454186250057647891, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: _eButton
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1618405704049088221, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_Name
       value: MessageCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 3370690430556697306, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5100538635300669358, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_Pivot.x
@@ -960,62 +948,6 @@ PrefabInstance:
     - target: {fileID: 5100538635300669358, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5464507081100237477, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 6518537851298725446, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 600
-      objectReference: {fileID: 0}
-    - target: {fileID: 6518537851298725446, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 6518537851298725446, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -279
-      objectReference: {fileID: 0}
-    - target: {fileID: 6800814957415208098, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_Text
-      value: Press F
-      objectReference: {fileID: 0}
-    - target: {fileID: 6874559112757918131, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6874559112757918131, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: fc41107405f67cc4ba93759a9bdc55a6, type: 3}
-    - target: {fileID: 6874559112757918131, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_RaycastPadding.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6874559112757918131, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 6874559112757918131, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6874559112757918131, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 6874559112757918131, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6874559112757918131, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_FontData.m_FontStyle
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6874559112757918131, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}

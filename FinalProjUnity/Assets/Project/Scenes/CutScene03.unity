@@ -30817,6 +30817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneToMove: 5
   _playerPositionInNewScene: {x: 1333.794, y: 107.712, z: 1179.212}
+  isCutScene: 0
 --- !u!208 &863913217
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -55444,6 +55445,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneToMove: 4
   _playerPositionInNewScene: {x: 1061.83, y: 121.1, z: 1152.84}
+  isCutScene: 0
 --- !u!208 &1575853506
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -64964,6 +64966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1917139352}
   - component: {fileID: 1917139353}
+  - component: {fileID: 1917139354}
   m_Layer: 0
   m_Name: GoToOutsidePolice
   m_TagString: Untagged
@@ -64992,12 +64995,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1917139351}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8e63fe342830e64491cbc5659040a3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneType: 6
+  _sceneType: 7
+--- !u!114 &1917139354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917139351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72e4069e71714a48b222f2a20d074f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneToMove: 7
+  _playerPositionInNewScene: {x: 1267.2, y: 107.18, z: 1071.8}
+  isCutScene: 1
 --- !u!1001 &1917923379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70268,9 +70286,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 454186250057647891, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1618405704049088221, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_Name
       value: MessageCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1618405704049088221, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5100538635300669358, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_Pivot.x

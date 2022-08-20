@@ -112,7 +112,6 @@ GameObject:
   - component: {fileID: 64760383554235674}
   - component: {fileID: 65470517025823062}
   - component: {fileID: 111112175266106182}
-  - component: {fileID: 114598817684318994}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -228,26 +227,6 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114598817684318994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1663045122990700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff42c338de0d3c248890c584e82bebe9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OpenSpeed: 1
-  CloseSpeed: 1
-  isAutomatic: 0
-  AutoClose: 0
-  DoubleSidesOpen: 0
-  PlayerTag: Player
-  OpenForwardAnimName: Door2_anim
-  OpenBackwardAnimName: DoorBack_anim
 --- !u!1 &1767978580590898
 GameObject:
   m_ObjectHideFlags: 0

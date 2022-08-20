@@ -59,7 +59,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -119,7 +119,7 @@ MonoBehaviour:
   _message: {fileID: 1139727842100291709}
   _image: {fileID: 7992777741474684344}
   _ui: {fileID: 1675170379113489172}
-  _eButton: {fileID: 0}
+  _eButton: {fileID: 4011622837000603960}
 --- !u!1 &1636543468802645952
 GameObject:
   m_ObjectHideFlags: 0

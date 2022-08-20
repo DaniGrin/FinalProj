@@ -9,7 +9,10 @@ namespace Project.Scrips.SceneLoader
         Hospital,
         Police,
         Outside,
+        Outside2,
         CutScene1,
-        CutScene2
+        CutScene2,
+        CutScene3,
+        CutScene4,
     }
 }
