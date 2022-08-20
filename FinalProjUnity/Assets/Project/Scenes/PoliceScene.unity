@@ -13146,6 +13146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98beb3009c4e33a43ae24706f3c2226d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _objectToDestroy: {fileID: 865938911}
 --- !u!1001 &333787587
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33714,6 +33715,11 @@ PrefabInstance:
 --- !u!1 &865938910 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4011622837000603960, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
+  m_PrefabInstance: {fileID: 865938909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &865938911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1618405704049088221, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
   m_PrefabInstance: {fileID: 865938909}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &867918606

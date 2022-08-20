@@ -13,9 +13,21 @@ namespace Project.Scrips.Weapon
         private bool _isPlayerNearWeapon;
         private Weapon _inAreaWeapon;
         private WeaponName _currentWeapon;
+        private string _weaponSaveKey = "WeaponSaveKey";
 
         public bool isHoldWeapon = false;
 
+
+        private void Awake()
+        {
+            if(PlayerPrefs.HasKey(_weaponSaveKey))
+            {
+                WeaponName weaponName = (WeaponName)PlayerPrefs.GetInt(_weaponSaveKey);
+                var foundWeapon = _playerWeapons.First(w => w.GetWeaponName() == weaponName);
+                SetWeapon(foundWeapon);
+            }
+
+        }
         public bool ContainsWeapon()
         {
             return _isContainsWeapon;
@@ -42,18 +54,25 @@ namespace Project.Scrips.Weapon
 
             if (weapon == null)
             {
+                PlayerPrefs.DeleteKey(_weaponSaveKey);
                 return;
             }
-            
-            var weaponName = weapon.GetWeaponName();
-            DestroyImmediate(weapon.gameObject);
 
-            _playerWeapons.First(w => w.GetWeaponName() == weaponName).gameObject.SetActive(true);
+            var weaponName = weapon.GetWeaponName();
+            var foundWeapon = _playerWeapons.First(w => w.GetWeaponName() == weaponName);
+
+            if (foundWeapon != weapon)
+            {
+                DestroyImmediate(weapon.gameObject);
+            }
+
+            foundWeapon.gameObject.SetActive(true);
             _currentWeapon = weaponName;
             _isContainsWeapon = true;
             
             MessageDialogManager.Instance.HideEButton();
             _isPlayerNearWeapon = false;
+            PlayerPrefs.SetInt(_weaponSaveKey, (int)weaponName);
         }
         
         private void Update()

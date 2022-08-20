@@ -8,6 +8,7 @@ using UnityEngine;
 public class showEButton : MonoBehaviour
 {
     private bool _isPlayerOnArea;
+    
     private void OnTriggerEnter(Collider other)
     {
 
@@ -29,6 +30,7 @@ public class showEButton : MonoBehaviour
     {
         if (_isPlayerOnArea && Input.GetKey(KeyCode.E))
         {
+            MessageDialogManager.Instance.HideEButton();
             SceneLoaderManager.Instance.SwitchScene(SceneType.CutScene3);
         }
     }
