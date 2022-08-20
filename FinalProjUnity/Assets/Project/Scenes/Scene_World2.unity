@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: e6e7d4820ea0ad04ca3f5021266dde74, type: 2}
 --- !u!1001 &1044118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23573,7 +23573,7 @@ PrefabInstance:
     - target: {fileID: 454186250057647891, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: _eButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1656061172}
     - target: {fileID: 1618405704049088221, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
       propertyPath: m_Name
       value: MessageCanvas
@@ -48043,6 +48043,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneToMove: 6
   _playerPositionInNewScene: {x: 1271.2, y: 106.586, z: 1046.27}
+  isCutScene: 0
 --- !u!65 &1444307593
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53276,6 +53277,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 2301669271051291720, guid: c9438bf1606833f44842ad8137e495aa, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2439239399224715423, guid: c9438bf1606833f44842ad8137e495aa, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -53626,6 +53631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneToMove: 5
   _playerPositionInNewScene: {x: 1333.794, y: 107.712, z: 1179.212}
+  isCutScene: 0
 --- !u!208 &1603230119
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -53669,6 +53675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneToMove: 4
   _playerPositionInNewScene: {x: 1061.83, y: 121.1, z: 1152.84}
+  isCutScene: 0
 --- !u!208 &1603230122
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -55091,6 +55098,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6805309330413161112, guid: 392496ed1211dc344975330c2fa631db, type: 3}
   m_PrefabInstance: {fileID: 1655650557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1656061172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4011622837000603960, guid: 41c72ac185582c3489b9d09006f03dd3, type: 3}
+  m_PrefabInstance: {fileID: 708835818}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1656983313
 PrefabInstance:
