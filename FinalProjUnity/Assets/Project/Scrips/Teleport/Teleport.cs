@@ -10,6 +10,8 @@ namespace Project.Scrips.Teleport
         [SerializeField] private Vector3 _playerPositionInNewScene;
         private bool _isPlayerInTeleportArea;
 
+        public bool isCutScene;
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.gameObject.CompareTag(ObjectsTag.Player))
@@ -27,7 +29,19 @@ namespace Project.Scrips.Teleport
                 _isPlayerInTeleportArea = false;
             }
         }
-        
+
+        private void Awake()
+        {
+            if(isCutScene == true)
+            {
+                _isPlayerInTeleportArea = false;
+                PlayerConfig.Instance.StarterPosition = _playerPositionInNewScene;
+                PlayerConfig.Instance.CurrentPlayerScene = _sceneToMove;
+                SceneLoaderManager.Instance.SwitchScene(_sceneToMove);
+                isCutScene = false;
+            }
+        }
+
         private void Update()
         {
             if (_isPlayerInTeleportArea && Input.GetKey(KeyCode.E))
@@ -39,5 +53,6 @@ namespace Project.Scrips.Teleport
                 SceneLoaderManager.Instance.SwitchScene(_sceneToMove);
             }
         }
+
     }
 }

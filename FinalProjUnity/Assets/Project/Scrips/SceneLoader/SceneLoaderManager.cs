@@ -86,11 +86,20 @@ namespace Project.Scrips.SceneLoader
                 case SceneType.Outside:
                     name = "SCENE_Apocalyptic_World_Assets";
                     break;
+                case SceneType.Outside2:
+                    name = "Scene_World2";
+                    break;
                 case SceneType.CutScene1:
                     name = "CutScene01";
                     break;
                 case SceneType.CutScene2:
                     name = "CutScene02";
+                    break;
+                case SceneType.CutScene3:
+                    name = "CutScene03";
+                    break;
+                case SceneType.CutScene4:
+                    name = "CutScene04";
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(sceneType), sceneType, null);
