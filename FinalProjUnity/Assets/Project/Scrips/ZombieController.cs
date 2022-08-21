@@ -1,5 +1,6 @@
 using Project.Scrips;
 using Project.Scrips.Hp;
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -29,6 +30,21 @@ public class ZombieController : MonoBehaviour
         isDeathHash = Animator.StringToHash("isDeath");
         _zombieSpeed = Agent.speed;
         _target = GameObject.FindGameObjectWithTag(ObjectsTag.Player).transform;
+        _zombieHp.Updated += OnUpdated;
+    }
+    private void OnDisable()
+    {
+        _zombieHp.Updated -= OnUpdated;
+    }
+
+    private void OnUpdated()
+    {
+        if (_zombieHp.Value <= 0)
+        {
+            animator.SetBool(isWalkHash, false);
+            animator.SetBool(isAttackHash, false);
+            animator.SetBool(isDeathHash, true);
+        }
     }
 
     void Update()
@@ -61,10 +77,6 @@ public class ZombieController : MonoBehaviour
         else
         {
             animator.SetBool(isAttackHash, false);
-        }
-        if (_zombieHp.Value == 0)
-        {
-            animator.SetBool(isDeathHash, true);
         }
     }
 

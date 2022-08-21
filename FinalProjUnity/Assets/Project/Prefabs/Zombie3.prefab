@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a3d5dcbcbc145deb91e4b46efa532c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxValue: 50
+  _maxValue: 20
 --- !u!195 &8748444163079116418
 NavMeshAgent:
   m_ObjectHideFlags: 0
