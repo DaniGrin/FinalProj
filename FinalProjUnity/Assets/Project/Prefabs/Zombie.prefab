@@ -9,9 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6112147610112123806}
-  - component: {fileID: 1043960603837763073}
-  - component: {fileID: 7544989100238904041}
-  - component: {fileID: 3544123622029023470}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -34,52 +31,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1043960603837763073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6112147610112123800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a3d5dcbcbc145deb91e4b46efa532c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxValue: 50
---- !u!114 &7544989100238904041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6112147610112123800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17552b5ab1fc4c098f97209a91c4a20c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _delayBetweenAttacksSeconds: 2
-  _weaponHolder: {fileID: 0}
-  _damageHands: 3
-  _isAttackAuto: 1
-  _myHp: {fileID: 1043960603837763073}
-  _disallowScriptsOnDie:
-  - {fileID: 7544989100238904041}
-  - {fileID: 6112147609700129724}
---- !u!65 &3544123622029023470
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6112147610112123800}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 0, z: 0.5}
 --- !u!54 &6112147609700129714
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128,7 +79,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   Agent: {fileID: 6112147609700129726}
-  _zombieHp: {fileID: 1043960603837763073}
+  _zombieHp: {fileID: 906523439}
 --- !u!195 &6112147609700129726
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -151,6 +102,66 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!65 &906523444
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6112147610322182376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!65 &906523445
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6112147610322182376}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 3, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &906523439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6112147610322182376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3d5dcbcbc145deb91e4b46efa532c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxValue: 20
+--- !u!114 &906523446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6112147610322182376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17552b5ab1fc4c098f97209a91c4a20c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _delayBetweenAttacksSeconds: 2
+  _weaponHolder: {fileID: 0}
+  _damageHands: 3
+  _isAttackAuto: 1
+  _myHp: {fileID: 906523439}
+  _disallowScriptsOnDie:
+  - {fileID: 906523439}
+  - {fileID: 6112147609700129724}
+  - {fileID: 906523446}
 --- !u!1 &8558317343027496595
 GameObject:
   m_ObjectHideFlags: 0
