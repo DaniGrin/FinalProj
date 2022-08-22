@@ -3605,6 +3605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneToMove: 6
   _playerPositionInNewScene: {x: 1271.2, y: 106.586, z: 1046.27}
+  isCutScene: 0
 --- !u!1001 &114578981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52432,6 +52433,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2621545735665882481, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2621545735977390122, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -52524,6 +52529,70 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 1604089668}
+    - target: {fileID: 2621545735992184997, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545735992184997, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545735992184997, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_FontData.m_AlignByGeometry
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545735992184997, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545735992184997, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545736027589661, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545736700508966, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545736700508966, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545736725791768, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545736981246608, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545737085475371, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545737281098679, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_RaycastPadding.w
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545737281098679, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_RaycastPadding.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545737281098679, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545737281098679, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621545737634208534, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b312897b9205c7d4dbcb30f15008ac4d, type: 3}
 --- !u!1 &1587699976 stripped
@@ -72127,6 +72196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneToMove: 5
   _playerPositionInNewScene: {x: 1333.794, y: 107.712, z: 1179.212}
+  isCutScene: 0
 --- !u!65 &6307541096854969984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72159,6 +72229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sceneToMove: 4
   _playerPositionInNewScene: {x: 1061.83, y: 121.1, z: 1152.84}
+  isCutScene: 0
 --- !u!65 &6307541096854969987
 BoxCollider:
   m_ObjectHideFlags: 0
