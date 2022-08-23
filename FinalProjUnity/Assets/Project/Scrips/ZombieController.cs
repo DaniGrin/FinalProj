@@ -16,9 +16,9 @@ public class ZombieController : MonoBehaviour
     [SerializeField] private NavMeshAgent Agent = null;
     [SerializeField] private HpEntityComponent _zombieHp;
     [SerializeField] private ParticleSystem _particle;
-    
+    [SerializeField] private AudioSource _audio;
     private Transform _target;
-
+    
     private Animator animator;
     private int isWalkHash;
     private int isAttackHash;
@@ -48,6 +48,8 @@ public class ZombieController : MonoBehaviour
             animator.SetBool(isDeathHash, true);
         }
         _particle.Play(true);
+        _audio.PlayDelayed(1);
+        
     }
 
     void Update()
