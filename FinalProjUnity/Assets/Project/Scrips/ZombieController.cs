@@ -15,6 +15,8 @@ public class ZombieController : MonoBehaviour
     [SerializeField] private LayerMask GroundMask;
     [SerializeField] private NavMeshAgent Agent = null;
     [SerializeField] private HpEntityComponent _zombieHp;
+    [SerializeField] private ParticleSystem _particle;
+    
     private Transform _target;
 
     private Animator animator;
@@ -45,6 +47,7 @@ public class ZombieController : MonoBehaviour
             animator.SetBool(isAttackHash, false);
             animator.SetBool(isDeathHash, true);
         }
+        _particle.Play(true);
     }
 
     void Update()
