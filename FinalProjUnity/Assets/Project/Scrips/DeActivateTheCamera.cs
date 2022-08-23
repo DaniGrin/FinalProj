@@ -9,4 +9,8 @@ public class DeActivateTheCamera : MonoBehaviour
     {
         _camera.GetComponent<MouseLook>().enabled = false;
     }
+    private void OnDisable()
+    {
+        _camera.GetComponent<MouseLook>().enabled = true;
+    }
 }
