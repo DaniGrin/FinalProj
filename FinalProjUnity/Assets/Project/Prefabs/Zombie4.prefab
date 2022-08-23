@@ -55,7 +55,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 1
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -4963,7 +4963,7 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 2892727657398074009}
   _zombieHp: {fileID: 2988189264564568270}
-  _particle: {fileID: 0}
+  _particle: {fileID: 7410100969200816759}
 --- !u!114 &2988189264564568270
 MonoBehaviour:
   m_ObjectHideFlags: 0

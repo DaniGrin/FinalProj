@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a3d5dcbcbc145deb91e4b46efa532c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxValue: 20
+  _maxValue: 50
 --- !u!195 &8748444163079116418
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 8748444163079116418}
   _zombieHp: {fileID: 7706694529853483447}
-  _particle: {fileID: 0}
+  _particle: {fileID: 4483283693742414803}
 --- !u!1 &8749491308253854148
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +248,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 1
     minScalar: 0
     maxCurve:
       serializedVersion: 2
