@@ -18,9 +18,11 @@ namespace Project.Scrips.Attack
         private bool _containsEnemy;
         private HpEntityComponent _enemyHp;
 
+        
         private void Update()
         {
-            if ((!_isAttackAuto && Input.GetKeyDown(KeyCode.Mouse0) || _isAttackAuto) && Time.time - _lastAttack >= _delayBetweenAttacksSeconds)
+            bool isPlayerClick = Input.GetKeyDown(KeyCode.Mouse0);
+            if ((!_isAttackAuto && isPlayerClick || _isAttackAuto) && Time.time - _lastAttack >= _delayBetweenAttacksSeconds)
             {
                 _lastAttack = Time.time;
 
@@ -34,7 +36,7 @@ namespace Project.Scrips.Attack
                     damage = _weaponHolder.CurrentWeapon().GetDamage();
                 }
 
-                if (_containsEnemy)
+                if (_containsEnemy && ((!_enemyHp.isZombie() && _isAttackAuto) || (_enemyHp.isZombie() && isPlayerClick)))
                 {
                     _enemyHp.Decrease(damage);
                 }
