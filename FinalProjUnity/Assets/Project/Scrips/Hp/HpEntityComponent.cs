@@ -9,7 +9,8 @@ namespace Project.Scrips.Hp
 
         [SerializeField] private int _maxValue;
         private int _value;
-
+        [SerializeField] private bool _isZombie;
+        
         private void Awake()
         {
             Value = _maxValue;
@@ -37,6 +38,10 @@ namespace Project.Scrips.Hp
             int newValue = Value - value;
 
             Value = newValue < 0 ? 0 : newValue;
+        }
+        public bool isZombie()
+        {
+            return _isZombie;
         }
     }
 }

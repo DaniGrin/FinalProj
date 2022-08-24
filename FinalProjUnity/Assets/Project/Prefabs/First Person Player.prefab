@@ -516,7 +516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _delayBetweenAttacksSeconds: 1
   _weaponHolder: {fileID: 4258453486496025044}
-  _damageHands: 3
+  _damageHands: 5
   _isAttackAuto: 0
   _myHp: {fileID: 3981231514314778553}
   _disallowScriptsOnDie:
