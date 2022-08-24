@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 7c3e138a5229ebb42871f749bd2e14cd
+guid: ee9452fa0dae9934c848769500f2bb93
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Zombie Walk
+    second: mixamo.com
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Zombie Walk
+      name: mixamo.com
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
@@ -104,7 +104,16 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
+  referencedClips:
+  - be29ebbd0611b344a8d502a0841f8125
+  - ba958277fe3251946b185dce13c35083
+  - 8305b567f372ad04eb956ed551ee38c1
+  - ad125d23db8e87a479164641ba9bf3e7
+  - 19524217bd998f34eb648f689c3a50e7
+  - 455d937aa5beb434fa41f456dba1b415
+  - ff015d8db8d8edb4a846a3539d33c1d9
+  - 165f06a4381a5e647b62271074b859e1
+  - 7c3e138a5229ebb42871f749bd2e14cd
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -542,13 +551,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: ZombieAD_A@Zombie Walk(Clone)
+    - name: ZombieAD_AZombie_Walk(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Geo
-      parentName: ZombieAD_A@Zombie Walk(Clone)
+      parentName: ZombieAD_AZombie_Walk(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -623,7 +632,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Group
-      parentName: ZombieAD_A@Zombie Walk(Clone)
+      parentName: ZombieAD_AZombie_Walk(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}

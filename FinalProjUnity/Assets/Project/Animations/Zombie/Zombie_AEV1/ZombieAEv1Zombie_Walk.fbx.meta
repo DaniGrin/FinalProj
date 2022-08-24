@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: eb7da00725d4ad9449fbcbce54bfbefb
+guid: 8f466ddc7d3beaf42916ae11448c600b
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Zombie Walk
+    second: mixamo.com
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -38,7 +38,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Zombie Walk
+      name: mixamo.com
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
@@ -107,7 +107,15 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips: []
+  referencedClips:
+  - 0409a402ad87f244f81473289a01bde7
+  - 4411e4df089059b4690ba11f8d50217f
+  - af841be0f51c5b44fb4a656936062c18
+  - 0895890bec71f46448b6b76ac4a1d8b0
+  - 25886a19be7cc9c4f8da14db11929ee1
+  - 8ef5dcf460f942346a694ae5e7be9069
+  - d2552b016d963a74cad9b152082e76f0
+  - eb7da00725d4ad9449fbcbce54bfbefb
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -529,13 +537,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: ZombieAEv1@Zombie Walk(Clone)
+    - name: ZombieAEv1Zombie_Walk(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Geo
-      parentName: ZombieAEv1@Zombie Walk(Clone)
+      parentName: ZombieAEv1Zombie_Walk(Clone)
       position: {x: -0, y: -0.045957755, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -620,7 +628,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Group
-      parentName: ZombieAEv1@Zombie Walk(Clone)
+      parentName: ZombieAEv1Zombie_Walk(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
