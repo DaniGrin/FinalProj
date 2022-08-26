@@ -1,6 +1,6 @@
 ﻿using Project.Scrips.SceneLoader;
 using UnityEngine;
-
+//script that attach to first scene to load the first scene in the game
 namespace Project.Scrips.Entry
 {
     public class Entry : MonoBehaviour

@@ -3,6 +3,7 @@ using Project.Scrips.Hp;
 using Project.Scrips.Weapon;
 using UnityEngine;
 
+//this class responsible on player & zombie healthPoints decrese while attacking
 namespace Project.Scrips.Attack
 {
     public class Attacker : MonoBehaviour
@@ -10,6 +11,7 @@ namespace Project.Scrips.Attack
         [SerializeField] private float _delayBetweenAttacksSeconds;
         [SerializeField] private WeaponHolder _weaponHolder;
         [SerializeField] private int _damageHands = 3;
+        //only zombie auto attacking
         [SerializeField] private bool _isAttackAuto;
         [SerializeField] private HpEntityComponent _myHp;
         [SerializeField] private List<MonoBehaviour> _disallowScriptsOnDie;
@@ -18,7 +20,7 @@ namespace Project.Scrips.Attack
         private bool _containsEnemy;
         private HpEntityComponent _enemyHp;
 
-        
+        //decrease healthPoints to enemy( if this player it will decrease to zombie else it will decrease to player)
         private void Update()
         {
             bool isPlayerClick = Input.GetKeyDown(KeyCode.Mouse0);

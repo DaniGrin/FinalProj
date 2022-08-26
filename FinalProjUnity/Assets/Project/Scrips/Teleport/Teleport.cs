@@ -1,7 +1,7 @@
 using Project.Scrips.MessageDialog;
 using Project.Scrips.SceneLoader;
 using UnityEngine;
-
+//this class allow to get the new scene and the loaction on the map
 namespace Project.Scrips.Teleport
 {
     public class Teleport : MonoBehaviour

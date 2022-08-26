@@ -1,5 +1,6 @@
 namespace Project.Scrips.SceneLoader
 {
+    //list of scenes
     public enum SceneType
     {
         None,

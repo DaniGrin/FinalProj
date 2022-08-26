@@ -4,7 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//this class summons zombies around a game object while player press a button as a trigger 
 public class MissionStarter : MonoBehaviour
 {
     private bool _isPlayerOnArea;
@@ -42,7 +42,7 @@ public class MissionStarter : MonoBehaviour
         _zombie.SetActive(true);
         _alert.SetActive(true);
     }
-
+    //get the id for the PlayerPrefs
     private string GetFullKey()
     {
         return "taskZombieAlert";

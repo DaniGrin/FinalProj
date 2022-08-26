@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
-
+//this class allow to load the scenes
 namespace Project.Scrips.Coroutine
 {
     public class CoroutineManager : MonoBehaviour

@@ -3,7 +3,7 @@ using System.Collections;
 using Project.Scrips.Coroutine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+//this class load and enter to the scene 
 namespace Project.Scrips.SceneLoader
 {
     public class SceneLoaderManager : ISceneLoaderManager
@@ -28,29 +28,29 @@ namespace Project.Scrips.SceneLoader
         {
             CoroutineManager.Instance.StartAsyncMethod(SwitchSceneAsync(scene));
         }
-
+        //function that load the next scene evrey frame and distroy the last scene
         private IEnumerator SwitchSceneAsync(SceneType scene)
         {
             if (!_isLoading)
             {
                 _isLoading = true;
-
+                //load the loading scene
                 var loadingScene = SceneManager.LoadSceneAsync(GetNameScene(SceneType.Loading));
-
+                //loop to wait for the scene to load and if its not load come back next frame
                 while (!loadingScene.isDone)
                 {
                     yield return null;
                 }
-
+                //wait 2 seconds for show the loader scene display
                 yield return new WaitForSeconds(2);
-
+                //load the next scene we want
                 var toLoadScene = SceneManager.LoadSceneAsync(GetNameScene(scene), LoadSceneMode.Additive);
-
+                //loop to wait for the scene to load and if its not load come back next frame
                 while (!toLoadScene.isDone)
                 {
                     yield return null;
                 }
-
+                //distroy last scene
                 var unloadLoadingScene = SceneManager.UnloadSceneAsync(GetNameScene(SceneType.Loading));
                 
                 while (!unloadLoadingScene.isDone)

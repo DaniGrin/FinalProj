@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-
+//this class displays player healthPoints
 namespace Project.Scrips.Hp
 {
     public class PlayerHpUi : MonoBehaviour
@@ -24,7 +24,7 @@ namespace Project.Scrips.Hp
         {
             UpdateHp();
         }
-
+        //displays updated healthPoints(this function added to the event)
         private void UpdateHp()
         {
             _hpText.text = _playerHp.Value.ToString();

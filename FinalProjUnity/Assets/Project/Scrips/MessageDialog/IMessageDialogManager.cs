@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-
+//this methods are relate to message dialog window
 namespace Project.Scrips.MessageDialog
 {
     public interface IMessageDialogManager

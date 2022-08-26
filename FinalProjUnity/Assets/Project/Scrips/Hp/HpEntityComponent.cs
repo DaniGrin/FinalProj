@@ -9,6 +9,7 @@ namespace Project.Scrips.Hp
 
         [SerializeField] private int _maxValue;
         private int _value;
+        //if the object is zombie or not
         [SerializeField] private bool _isZombie;
         
         private void Awake()
@@ -25,14 +26,14 @@ namespace Project.Scrips.Hp
                 Updated?.Invoke();
             }
         }
-
+        //increse healthPoints
         public void Increase(int value)
         {
             int newValue = value + Value;
 
             Value = newValue > _maxValue ? _maxValue : newValue;
         }
-
+        //decrease healthPoints
         public void Decrease(int value)
         {
             int newValue = Value - value;

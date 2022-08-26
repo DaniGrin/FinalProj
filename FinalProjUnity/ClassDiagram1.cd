@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Project.Scrips.Attack.Attacker">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAABAABAAAABAAAAAAABAAAAAJAIRAQAIAAASAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Attack\Attacker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project.Scrips.Coroutine.CoroutineManager">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Coroutine\CoroutineManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project.Scrips.Entry.Entry">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Entry\Entry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project.Scrips.Hp.HpEntityComponent" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAEAAAAAABAAAAAQAAAAAAAAAAEAAAQAAgACAAAEA=</HashCode>
+      <FileName>Assets\Project\Scrips\Hp\HpEntityComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Project.Scrips.Hp.PlayerHpUi">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIAAAAAAAAAAAAAAAQAAAAAAAAAAIAAAAACFACAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Hp\PlayerHpUi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project.Scrips.MessageDialog.MessageDialogComponent">
+    <Position X="11" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAIIAAgRAAABAAAAAEAAAAIAAUAEAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\MessageDialog\MessageDialogComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project.Scrips.MessageDialog.MessageDialogManager" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAkMAIABCgIEEAAAAAAAAAAAQAAAVAAAAAAAQEI=</HashCode>
+      <FileName>Assets\Project\Scrips\MessageDialog\MessageDialogManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MissionStarter">
+    <Position X="2.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAIAAABAAAAAAAgAEAAAIIAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Mission\MissionStarter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameSettings" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAEAEAAAAAAAACAAEAAAAAAAAAACACAQAAgAAQAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Settings\GameSettings.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MainMenu">
+    <Position X="4" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Settings\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuSettings">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAEAAAAAAAAAAAACAAAAAAAABAgAAAAAAAAiAQ=</HashCode>
+      <FileName>Assets\Project\Scrips\Settings\MenuSettings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="animationState">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQQACAAACAAAAAAAAAAAAAAAACAAAAAAAAAAAApAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\animationState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="animationStateController">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\animationStateController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeActivateTheCamera">
+    <Position X="11" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAACAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\DeActivateTheCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InGameMenu">
+    <Position X="5.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAAAAAAAAAAAAAAAAAAAAAACAgACAAAAAACAABAA=</HashCode>
+      <FileName>Assets\Project\Scrips\InGameMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MouseLook">
+    <Position X="4" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACAQ=</HashCode>
+      <FileName>Assets\Project\Scrips\MouseLook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OpenDoor">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAIAAAAAAAAAAAAAAAAIAAYAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\OpenDoor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerMovement">
+    <Position X="9.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAgAAAAAAQEBAAAAJEAAAoAAAQAIAASAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\PlayerMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="showEButton">
+    <Position X="4" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAEAAAAIAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\showEButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SwitchToFinalScene">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\SwitchToFinalScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SwitchToNextSecen">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Project\Scrips\SwitchToNextSecen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZombieController">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAEgEAlCoAAAIAgAEQAAAAQAAAAQAIIAAAAAMAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\ZombieController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project.Scrips.SceneLoader.SceneLoaderManager" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEEAAAAIACAAAAAAAAEAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\SceneLoader\SceneLoaderManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Project.Scrips.Teleport.PlayerConfig">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAABAAAAAAAAAACAAQAAAABAAggg=</HashCode>
+      <FileName>Assets\Project\Scrips\Teleport\PlayerConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project.Scrips.Teleport.Teleport">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAEAAAAAAAIAAQACAQAAAgEA=</HashCode>
+      <FileName>Assets\Project\Scrips\Teleport\Teleport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project.Scrips.Teleport.TeleportPositionUpdater">
+    <Position X="9.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAgAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Teleport\TeleportPositionUpdater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project.Scrips.Weapon.Weapon">
+    <Position X="4" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIABAAAgAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Weapon\Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project.Scrips.Weapon.WeaponHolder">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAgAAAAAAAAAAAAAAAhACAAJAAQgCAAAAAAGA=</HashCode>
+      <FileName>Assets\Project\Scrips\Weapon\WeaponHolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Project.Scrips.ObjectsTag">
+    <Position X="7.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\ObjectsTag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Project.Scrips.Hp.IHpEntity">
+    <Position X="0.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAABAAAAAAAAAAAAAAAAAAAAQAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Hp\IHpEntity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Project.Scrips.MessageDialog.IMessageDialogManager">
+    <Position X="7.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAkEAAABCAIAEAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Project\Scrips\MessageDialog\IMessageDialogManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IGameSettings">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAEAAAAAAAAAAAEAAAAAAAAAACACAAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Settings\IGameSettings.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Project.Scrips.SceneLoader.ISceneLoaderManager">
+    <Position X="0.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\SceneLoader\ISceneLoaderManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GameQuality">
+    <Position X="0.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAACAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Settings\GameQuality.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Project.Scrips.SceneLoader.SceneType">
+    <Position X="11" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQAgAgAAAAAAAAAAIAAIACAAAIAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\SceneLoader\SceneType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Project.Scrips.Weapon.WeaponName">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Project\Scrips\Weapon\WeaponName.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
