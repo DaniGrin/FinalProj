@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//this class allows to change the game settings in the system
 public class GameSettings : IGameSettings
 {
     private static GameSettings _instance;

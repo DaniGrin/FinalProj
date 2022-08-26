@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
-
+//this class display and update the game settings
 public class MenuSettings : MonoBehaviour
 {
     [SerializeField] private Slider _mouseSensitivity;

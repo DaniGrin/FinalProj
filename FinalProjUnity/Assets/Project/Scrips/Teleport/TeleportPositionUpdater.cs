@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//this class set the starter postion of the player
 namespace Project.Scrips.Teleport
 {
     public class TeleportPositionUpdater : MonoBehaviour

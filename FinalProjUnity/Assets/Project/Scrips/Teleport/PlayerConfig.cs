@@ -1,6 +1,6 @@
 using Project.Scrips.SceneLoader;
 using UnityEngine;
-
+//this class allow us to save the player position on the map and the scene that he last teleport to
 namespace Project.Scrips.Teleport
 {
     public class PlayerConfig

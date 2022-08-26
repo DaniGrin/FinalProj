@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-
+//this class allows to open message dialog withs NPC
 namespace Project.Scrips.MessageDialog
 {
     public class MessageDialogComponent : MonoBehaviour

@@ -1,7 +1,7 @@
 using Project.Scrips.SceneLoader;
 using Project.Scrips.Teleport;
 using UnityEngine;
-
+//this class is allow to use the menu buttons(Start,LoadGame,Exit)
 public class MainMenu : MonoBehaviour
 {
     public void LoadGameButton()

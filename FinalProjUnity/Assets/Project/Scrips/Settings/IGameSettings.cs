@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//this methods display and update the settings
 public interface IGameSettings
 {
     float GetSensitivity();

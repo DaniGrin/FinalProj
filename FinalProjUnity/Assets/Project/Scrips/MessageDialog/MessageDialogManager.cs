@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//this class display the content of the message dialog and allow to the player to browse between messages
 namespace Project.Scrips.MessageDialog
 {
     public class MessageDialogManager : MonoBehaviour, IMessageDialogManager
@@ -41,6 +41,7 @@ namespace Project.Scrips.MessageDialog
 
         private void Update()
         {
+            //get the next message if F button pressed
             if (Input.GetKeyDown(KeyCode.F) && _ui.activeInHierarchy)
             {
                 NextMessage();
