@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//this class allowd to animate any of the player's movement and actions
+//the functions below activates and pause the animate by buttons that pressed as a trigger
 public class animationState : MonoBehaviour
 {
     [SerializeField] private WeaponHolder _playerWeaponHolder;

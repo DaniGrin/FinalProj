@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//this class update the mouse movement properties its height and width speed and
+//rotation also on the game for controlling it properly.
 public class MouseLook : MonoBehaviour
 {
     public Transform playerBody;

@@ -4,6 +4,7 @@ using System;
 using UnityEngine;
 using UnityEngine.AI;
 
+//this class allow to control the movement of the zombie its position , tracking the player  and activate its animations
 public class ZombieController : MonoBehaviour
 {
     private bool _isGrounded;

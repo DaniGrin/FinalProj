@@ -3,7 +3,7 @@ using System.Linq;
 using Project.Scrips.MessageDialog;
 using Unity.VisualScripting;
 using UnityEngine;
-
+//this class allow to the player to pick up and hold a weapon 
 namespace Project.Scrips.Weapon
 {
     public class WeaponHolder : MonoBehaviour
@@ -38,6 +38,7 @@ namespace Project.Scrips.Weapon
             return _playerWeapons.First(w => w.GetWeaponName() == _currentWeapon);
         }
 
+        //this method attach the weapon to the player
         private void SetWeapon(Weapon weapon)
         {
             if (_isContainsWeapon)
@@ -75,6 +76,7 @@ namespace Project.Scrips.Weapon
             PlayerPrefs.SetInt(_weaponSaveKey, (int)weaponName);
         }
         
+        //take weapon by press E , drop weapon by press G
         private void Update()
         {
             if (_isPlayerNearWeapon && Input.GetKeyDown(KeyCode.E))

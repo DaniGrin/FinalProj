@@ -4,6 +4,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// this class allow to open a menu inside the game by pressing ESC button
+// also its switches scene if the player choose to go back to the main screen of the game 
 public class InGameMenu : MonoBehaviour
 {
     [SerializeField] private GameObject _inGameMenu;
