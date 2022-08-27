@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//this class responsible on the player movement , allow to controll his speed , sprint speed , crouch height and jump height
+//and other movement actions
 public class PlayerMovement : MonoBehaviour
 {
     

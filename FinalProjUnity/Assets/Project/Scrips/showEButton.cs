@@ -4,7 +4,8 @@ using Project.Scrips.SceneLoader;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//this class display the Press E sentence on the game if the player nearly objects
+//that has a trigger to do something like switching scenes or pick up weapons
 public class showEButton : MonoBehaviour
 {
     private bool _isPlayerOnArea;

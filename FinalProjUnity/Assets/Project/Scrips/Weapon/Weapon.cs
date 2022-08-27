@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+//this class describes weapon and its properties
 namespace Project.Scrips.Weapon
 {
     public class Weapon : MonoBehaviour

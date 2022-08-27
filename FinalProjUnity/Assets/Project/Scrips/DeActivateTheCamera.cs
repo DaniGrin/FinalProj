@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//this class moves the camera view by the mouse movement 
 public class DeActivateTheCamera : MonoBehaviour
 {
     [SerializeField] private GameObject _camera;

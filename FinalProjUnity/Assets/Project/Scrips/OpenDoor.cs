@@ -3,7 +3,7 @@ using Project.Scrips.MessageDialog;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//this class allow to open doors around the map by pressing the key button E as a trigger
 public class OpenDoor : MonoBehaviour
 {
     [SerializeField] private Animator _animator;
