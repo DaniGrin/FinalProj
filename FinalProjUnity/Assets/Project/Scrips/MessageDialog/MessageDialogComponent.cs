@@ -33,7 +33,7 @@ namespace Project.Scrips.MessageDialog
 
         private void Update()
         {
-            if (_isPlayerOnArea && Input.GetKey(KeyCode.E))
+            if (_isPlayerOnArea && Input.GetKeyDown(KeyCode.E))
             {
                 Activate();
             }

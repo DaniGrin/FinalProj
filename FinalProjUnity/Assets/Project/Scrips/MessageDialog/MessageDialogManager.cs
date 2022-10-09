@@ -15,8 +15,9 @@ namespace Project.Scrips.MessageDialog
 
         private List<string> _messages;
         private List<string> _repeatMessages;
-        private bool _isRepeat;
+        
         private int _messageIndex;
+        private bool _isRepeat;
         private static IMessageDialogManager _instance;
 
         public bool IsActive()
@@ -44,7 +45,7 @@ namespace Project.Scrips.MessageDialog
             //get the next message if F button pressed
             if (Input.GetKeyDown(KeyCode.F) && _ui.activeInHierarchy)
             {
-                NextMessage();
+                NextMessage(_isRepeat);
             }
         }
 
@@ -72,14 +73,14 @@ namespace Project.Scrips.MessageDialog
         public void ShowMessage(bool isAlreadyRead)
         {
             _messageIndex = -1;
-
+            _isRepeat = isAlreadyRead;
             var isMessagesValid = isAlreadyRead && _repeatMessages != null && _repeatMessages.Count > 0 ||
                                   !isAlreadyRead && _messages != null && _messages.Count > 0;
 
             if (isMessagesValid)
             {
                 _ui.SetActive(true);
-                NextMessage();
+                NextMessage(isAlreadyRead);
             }
         }
 
@@ -93,13 +94,13 @@ namespace Project.Scrips.MessageDialog
             _eButton.SetActive(false);
         }
 
-        private void NextMessage()
+        private void NextMessage(bool isRepeat)
         {
             ++_messageIndex;
             bool canNext;
             string message = "";
 
-            if (_isRepeat)
+            if (isRepeat)
             {
                 canNext = _repeatMessages.Count > _messageIndex;
                 if (canNext)
@@ -120,7 +121,7 @@ namespace Project.Scrips.MessageDialog
                 }
                 else
                 {
-                    _isRepeat = true;
+                    
                     Hide();
                 }
             }
