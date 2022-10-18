@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c63a8c2ca1e31f546bd1b37019be9f94, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.3041934, g: 0.41177586, b: 0.37945947, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1386,6 +1386,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 45202680}
   _zombieHp: {fileID: 0}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &45202680
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2779,6 +2781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &89918127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2819,6 +2822,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 89918129}
   _zombieHp: {fileID: 89918126}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &89918129
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5857,6 +5862,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 164277790}
   _zombieHp: {fileID: 164277791}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &164277790
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -5892,6 +5899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &164277792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10170,6 +10178,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 224240317}
   _zombieHp: {fileID: 224240318}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &224240317
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10205,6 +10215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &224240319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10305,6 +10316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &224742192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10345,6 +10357,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 224742194}
   _zombieHp: {fileID: 224742191}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &224742194
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11494,6 +11508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!195 &266965768
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11535,6 +11550,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 266965768}
   _zombieHp: {fileID: 266965767}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!65 &266965770
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13012,6 +13029,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 325418043}
   _zombieHp: {fileID: 325418044}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &325418043
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -13047,6 +13066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &325418045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14095,6 +14115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &367472410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14135,6 +14156,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 367472412}
   _zombieHp: {fileID: 367472409}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &367472412
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -15486,6 +15509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &435782366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15526,6 +15550,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 435782368}
   _zombieHp: {fileID: 435782365}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &435782368
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20240,6 +20266,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 581377789}
   _zombieHp: {fileID: 581377790}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &581377789
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20275,6 +20303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &581377791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20459,6 +20488,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 586426945}
   _zombieHp: {fileID: 586426946}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &586426945
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20494,6 +20525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &586426947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26216,6 +26248,99 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 4, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &692172718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692172720}
+  - component: {fileID: 692172719}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &692172719
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692172718}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &692172720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692172718}
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 998.8, y: 388.4, z: 819.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &693115773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28457,6 +28582,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 743975915}
   _zombieHp: {fileID: 743975916}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &743975915
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -28492,6 +28619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &743975917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29384,6 +29512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!195 &768118408
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -29425,6 +29554,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 768118408}
   _zombieHp: {fileID: 768118407}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!65 &768118410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32118,6 +32249,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 842664693}
   _zombieHp: {fileID: 0}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &842664693
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32573,6 +32706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!195 &852119641
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -32614,6 +32748,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 852119641}
   _zombieHp: {fileID: 852119640}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!65 &852119643
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36476,6 +36612,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 938724299}
   _zombieHp: {fileID: 938724300}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &938724299
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -36511,6 +36649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &938724301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37648,6 +37787,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 964770912}
   _zombieHp: {fileID: 0}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!65 &964770914
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37942,6 +38083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!195 &969584933
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -37983,6 +38125,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 969584933}
   _zombieHp: {fileID: 969584932}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!65 &969584935
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46187,6 +46331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!195 &1142999803
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -46228,6 +46373,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1142999803}
   _zombieHp: {fileID: 1142999802}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!65 &1142999805
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46624,6 +46771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &1161130259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46664,6 +46812,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1161130261}
   _zombieHp: {fileID: 1161130258}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1161130261
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -47221,6 +47371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!195 &1169781498
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -47262,6 +47413,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1169781498}
   _zombieHp: {fileID: 1169781497}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!65 &1169781500
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47654,6 +47807,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1202853660}
   _zombieHp: {fileID: 0}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1202853660
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -48263,6 +48418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!195 &1221389295
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -48304,6 +48460,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1221389295}
   _zombieHp: {fileID: 1221389294}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!136 &1221389297
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -49926,6 +50084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &1268324098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49966,6 +50125,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1268324100}
   _zombieHp: {fileID: 1268324097}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1268324100
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -51339,6 +51500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!195 &1297882590
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -51380,6 +51542,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1297882590}
   _zombieHp: {fileID: 1297882589}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!65 &1297882592
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53540,6 +53704,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1357014896}
   _zombieHp: {fileID: 1357014897}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1357014896
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -53575,6 +53741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &1357014898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53983,6 +54150,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1365527842}
   _zombieHp: {fileID: 0}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1365527842
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -54323,6 +54492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!195 &1377880229
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -54364,6 +54534,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1377880229}
   _zombieHp: {fileID: 1377880228}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!65 &1377880231
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61316,6 +61488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!195 &1575357938
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -61357,6 +61530,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1575357938}
   _zombieHp: {fileID: 1575357937}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!65 &1575357940
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62100,6 +62275,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1598423929}
   _zombieHp: {fileID: 1598423930}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1598423929
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -62135,6 +62312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &1598423931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62235,6 +62413,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &1602681911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62275,6 +62454,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1602681913}
   _zombieHp: {fileID: 1602681910}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1602681913
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -65922,6 +66103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &1713953142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65962,6 +66144,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1713953144}
   _zombieHp: {fileID: 1713953141}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1713953144
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -76295,6 +76479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &1868794893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76335,6 +76520,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1868794895}
   _zombieHp: {fileID: 1868794892}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1868794895
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -76455,6 +76642,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1870026716}
   _zombieHp: {fileID: 1870026717}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1870026716
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -76490,6 +76679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &1870026718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79266,6 +79456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!114 &1936185593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79306,6 +79497,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1936185595}
   _zombieHp: {fileID: 1936185592}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1936185595
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -81857,6 +82050,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 1991182648}
   _zombieHp: {fileID: 0}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!195 &1991182648
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -84024,6 +84219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxValue: 20
+  _isZombie: 0
 --- !u!195 &2061170662
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -84065,6 +84261,8 @@ MonoBehaviour:
     m_Bits: 128
   Agent: {fileID: 2061170662}
   _zombieHp: {fileID: 2061170661}
+  _particle: {fileID: 0}
+  _audio: {fileID: 0}
 --- !u!65 &2061170664
 BoxCollider:
   m_ObjectHideFlags: 0
